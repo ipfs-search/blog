@@ -1,0 +1,20 @@
+# main links
+main:
+  #- title: "Quick-Start Guide"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+
+  - title: "Documentation"
+    url: https://ipfs-search.readthedocs.io/en/latest/
+
+  - title: "Contribute"
+    url: https://opencollective.com/ipfs-search
+  - title: "About"
+    url: /about/    
+  - title: Search IPFS
+    url: https://ipfs-search.com/#/search    
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
