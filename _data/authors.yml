@@ -1,0 +1,34 @@
+
+Billy Rick:
+#Example
+  name        : "Billy Rick"
+  bio         : "What do you want, jewels? I am a very extravagant man."
+  avatar      : #"/assets/images/bio-photo-2.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:billyrick@rick.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://thewhip.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/extravagantman"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ipfs-search/ipfs-search"
+
+Lars Magne Tungland:
+  name      : "Lars Magne Tungland"
+  bio       : "ipfs-search henchman"
+  #avatar    :
+  links:
+#    - label: "Email"
+#      icon: "fas fa-envelope-square"
+#      url: "mailto:info@ipfs-search.com"
+#    - label: "Website"
+#     icon: "fas fa-fw fa-link"
+#      url: "https://ipfs-search.com/#/search"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/ipfs-search/ipfs-search"
