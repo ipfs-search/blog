@@ -3,18 +3,18 @@ title:  "Towards a new front-end for searching the Decentralized Web"
 author: Kees van Drongelen
 ---
 
-![Preview of our upcoming front-end](https://i.imgur.com/DChmutM.png)
+![Preview of our upcoming front-end](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-1.png)
 
 ## A brief history of ipfs-search.com
 Over the last 5 years, we have been offering our search engine for the decentralized web through two iterations of front-ends, as well as through our [REST API](https://api.ipfs-search.com/). In 2016, we started out with an absolutely minimal frontend for a search-engine, both in terms of technology (no framework was used) as well as the user experience and design. Those involved with IPFS for a while might remember the 'traditional' yellow look of our site.
-![Our first front-end, back in 2016](https://i.imgur.com/0zjJ7I8.png)
+![Our first front-end, back in 2016](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-old-1.png)
 
 When in 2018 [RedPencil](http://redpencil.io/) joined our project, we decided to develop a new frontend based on [Bootstrap](https://getbootstrap.com/) and [Ember.js](https://emberjs.com/), and an completely new design. Apart from a much better look, it allowed users to select types of content and provided previews of media.
 
 When in 2019 we received a grant from [NLNet](https://nlnet.nl/project/IPFS-search/) through the EU's Next Generation Internet (NGI0) Discovery Fund, we decided once more to do an overhaul of our search engine's user facing part.
 
-![The second iteration of our front-end, based on Ember.js and Bootstrap](https://i.imgur.com/VMx9Zl7.png)
-![Streaming content previews in our front-end.](https://i.imgur.com/TSqztxe.png)
+![The second iteration of our front-end, based on Ember.js and Bootstrap](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-old-2.png)
+![Streaming content previews in our front-end.](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-old-3.png)
 
 As the IPFS ecosystem and userbase grew, the expectations of our users changed. Whereas until quite recently, a technical background could have been reasonably assumed, this is increasingly no longer the case. As more and more 'regular users' learn about IPFS, more content will be available and with our public-facing site we wish to accomodate these new users' expectations.
 
@@ -44,7 +44,7 @@ With these frameworks, which all essentially do the same, we can change the any 
 
 And this was what our debate was about. While none of us particularly liked Angular or React, despite their popularity, it became clear that we had to choose between EmberJS, which some of us have significant experience in, or will we use VueJS, which others have experience in and others are inclined against learning. The JavaScript world is a world of fast-moving things, hypes and trends. Whereas in other many ecosystems it takes years for a library to gain traction, and decades for it to die out, the average life of a JS project is short and brutish. Hence, picking the wrong library may well mean shooting ourselves in the foot, taking months to learn a framework while it may well be [unsupported within a few years](https://docs.angularjs.org/misc/version-support-status).
 
-[![Stack Overflow questions per front-end framework](https://i.imgur.com/UrsKI6H.png)](https://insights.stackoverflow.com/trends?tags=angular%2Creactjs%2Czurb-foundation%2Csemantic-ui%2Cjquery%2Cvue.js%2Cember.js%2Cbackbone.js)
+[![Stack Overflow questions per front-end framework](/assets/images/2021-04-18-towards-a-new-frontend/graph.png)](https://insights.stackoverflow.com/trends?tags=angular%2Creactjs%2Czurb-foundation%2Csemantic-ui%2Cjquery%2Cvue.js%2Cember.js%2Cbackbone.js)
 
 In the end, the choice led to a shift of roles within the team; those who preferred not to work with VueJS shifted their attention towards other parts of the project. It did take a few deep breaths to get over our differences, to see that making a choice was more important and that nobody had to work with tools they absolutely did not want to. Sometimes, making a decision is more important than the actual content of that decision, and this seems to have been the case here.
 
@@ -71,7 +71,7 @@ For the different filetypes like documents, audio and video it would be nice to 
 
 During the third iteration we had less difficulties to implement this pattern. Thanks to the template mechanism in Vue and the scoped wise SCSS approach it was easier to get the desired result. We had to make hardly any exceptions in the default options for the mixed components. It must be said that in later Bootstrap versions the robustness and design of integrated components has also approved a tremendous lot. So it is more a question of trying out new frameworks and techniques and testing them than criticising different frameworks.
 
-![](https://i.imgur.com/HbmrXNH.png)
+![](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-2.png)
 
 ## Filetype visibility
 
@@ -81,12 +81,12 @@ In the first version of the IPFS Search UI, we wanted to enable the user to quic
 
 Back when we started our work, we used sketches to explore what kind of information we wanted to convey to users, how to best present it to them, and how to best craft the interaction.
 
-![Sketch of video lsit view](https://i.imgur.com/c3ye2XD.png)
+![Sketch of video lsit view](/assets/images/2021-04-18-towards-a-new-frontend/search-sketch-1.png)
 
-![Sketch of directory list view](https://i.imgur.com/arMP46D.png)
+![Sketch of directory list view](/assets/images/2021-04-18-towards-a-new-frontend/search-sketch-2.png)
 
 And then, nearing the final stages of our design, it looks like this:
-![](https://i.imgur.com/EvDJW46.jpg)
+![](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-3.jpg)
 
 ## Check it out!
 Actually, as a Open Source project, the repository which we're working in is readily available on [GitHub](https://github.com/ipfs-search/dweb-search-frontend).
