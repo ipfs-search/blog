@@ -279,4 +279,6 @@ defaults:
       read_time: true
       comments: # true
       share: true
-      related: true
+      related: false
+      header:
+        overlay_image: "/assets/images/default_overlay.png"

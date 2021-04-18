@@ -1,8 +1,12 @@
 ---
 title:  "Towards a new front-end for searching the Decentralized Web"
 author: Kees van Drongelen
+excerpt: As the IPFS ecosystem and userbase grew, the expectations of our users changed. When in 2019 we received a grant from [NLNet](https://nlnet.nl/project/IPFS-search/), we decided once more to do an overhaul of our search engine's user facing part.
+
 header:
   teaser: "/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-3.jpg"
+  overlay_image: "/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-3.jpg"
+  overlay_filter: rgba(0, 0, 0, 0.7)
 tags:
   - frontend
   - history

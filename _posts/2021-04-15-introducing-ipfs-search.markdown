@@ -1,8 +1,12 @@
 ---
 layout: single
-title:  "Introducing ipfs-search.com"
+title:  "Why we created ipfs-search.com"
 author: Mathijs de Bruin
-sticky: true
+excerpt: Once, the internet was the new frontier, the new “land of opportunities”, offering freedom of information. But the internet is rapidly being being divided among a few tech giants, who can decide who gets access to which information and at what price. It is their small number and their dominant position which are eroding our freedom.
+header:
+  teaser: "/assets/images/2021-04-15-introducing-ipfs-search/internet_freedom.jpg"
+  overlay_image: "/assets/images/2021-04-15-introducing-ipfs-search/internet_freedom.jpg"
+  overlay_filter: rgba(0, 0, 0, 0.7)
 ---
 Once, the internet was the new frontier, the new “land of opportunities”, offering freedom of information. The WWW, Usenet and email allowed anyone to share with anyone, without costs or permission. But the internet is rapidly being claimed. It is being divided among a few tech giants, who can decide who gets access to which information and at what price. It is their small number and their dominant position which are eroding our freedom.
 
