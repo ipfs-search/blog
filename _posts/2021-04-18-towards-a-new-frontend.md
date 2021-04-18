@@ -12,8 +12,6 @@ tags:
   - history
 ---
 
-![Preview of our upcoming front-end](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-1.png)
-
 ## A brief history of ipfs-search.com
 Over the last 5 years, we have been offering our search engine for the decentralized web through two iterations of front-ends, as well as through our [REST API](https://api.ipfs-search.com/). In 2016, we started out with an absolutely minimal frontend for a search-engine, both in terms of technology (no framework was used) as well as the user experience and design. Those involved with IPFS for a while might remember the 'traditional' yellow look of our site.
 ![Our first front-end, back in 2016](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-old-1.png)
