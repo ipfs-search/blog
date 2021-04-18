@@ -14,3 +14,8 @@ To create a post, add a file to the _posts directory with the following format:
 
     YEAR-MONTH-DAY-title.MARKUP
 
+## Drafts
+Drafts for posts can be put in  `/_drafts`
+
+## Author bio
+Details about authors can be added to `/_data/authors.yml` and called by adding `author : AUTHOR_NAME` to the Frontmatter of the post.  
