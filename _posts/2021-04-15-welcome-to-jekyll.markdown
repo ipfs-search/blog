@@ -1,30 +1,17 @@
 ---
 layout: single
-title:  "Welcome to Jekyll!"
-date:   2021-04-15 17:31:09 +0200
-categories: jekyll update
-published: False
+title:  "Introducing ipfs-search.com"
+author: Mathijs de Bruin
+sticky: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Once, the internet was the new frontier, the new “land of opportunities”, offering freedom of information. The WWW, Usenet and email allowed anyone to share with anyone, without costs or permission. But the internet is rapidly being claimed. It is being divided among a few tech giants, who can decide who gets access to which information and at what price. It is their small number and their dominant position which are eroding our freedom.
 
-Jekyll requires blog post files to be named according to the following format:
+This is why Tim Berners Lee has been calling for the re-decentralisation of the web. For the first time, we can form communication networks along the lines that define them; the connections between people. Requiring no authority, it is virtually impossible to limit or control them and it hugely benefits efficiency. By optimally using the myriad of connections between people’s devices, information can be distributed however is required.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+IPFS is on the forefront of this wave, as recognised by large equity investors and their wildly succesful SEC regulated Filecoin ICO. It’s giving hope to our dreams of a wide open internet, equally accessible to everyone; young and old, rich and poor, near and far. But without useful tools to browse and explore this new system, it won’t take off. This is why in 2016, we have designed and built the first search engine in the galaxy to navigate the Interplanetary Filesystem.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+We initially implemented ipfs-search.com as a traditionally centralised web service, though fully Open Source. Soon, our search index will be distributed daily over IPFS, sharing ownership over the data with the world. With its maturation, we will implement search directly over IPFS. As algorithms for trustless computing continue to evolve, we will decentralise the crawler as well, solving the decentralised search problem entirely.
 
-Jekyll also offers powerful support for code snippets:
+We provide a perspective on the world’s information which is truly neutral with regards to political or commercial interests. The significantly reduced resource usage, as mainly spare computing and disk space is used, allows for search to become a utility in the public domain. It will be owned and operated by its stakeholders: the people.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/

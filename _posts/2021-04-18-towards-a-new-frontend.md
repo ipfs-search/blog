@@ -1,6 +1,11 @@
 ---
 title:  "Towards a new front-end for searching the Decentralized Web"
 author: Kees van Drongelen
+header:
+  teaser: "/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-3.jpg"
+tags:
+  - frontend
+  - history
 ---
 
 ![Preview of our upcoming front-end](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-1.png)
