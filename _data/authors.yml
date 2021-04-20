@@ -32,3 +32,12 @@ Lars Magne Tungland:
 #    - label: "GitHub"
 #      icon: "fab fa-fw fa-github"
 #      url: "https://github.com/ipfs-search/ipfs-search"
+
+Kees van Drongelen:
+  name : "Kees van Drongelen"
+  bio : "(Interaction) Designer And Frontend Developer"
+
+Mathijs de Bruin:
+  name : "Mathijs de Bruin"
+  bio : "Inventor and Founder of ipfs-search.com"
+
