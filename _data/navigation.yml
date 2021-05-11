@@ -2,6 +2,8 @@
 main:
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    url: /About/
   - title: "Code"
     url: http://github.com/ipfs-search/
   - title: "Documentation"
@@ -16,5 +18,4 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "About"
-    url: /About/
+
