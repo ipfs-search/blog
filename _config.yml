@@ -98,7 +98,7 @@ author:
   avatar           : "/assets/images/ipfs_search_avatar.png"
   bio              : "Search engine for the Interplanetary Filesystem (IPFS)."
   location         : "The distributed web"
-  email            : "info@ipfs-search.com"
+  # email            : "info@ipfs-search.com"
   links:
     - label: "Email"
       icon: "fas fa-envelope-square"
