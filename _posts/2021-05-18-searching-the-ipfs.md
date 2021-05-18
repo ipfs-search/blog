@@ -5,11 +5,6 @@ excerpt: "An quick guide on how to use ipfs-search.com to look for specific cont
 header :
   teaser: "/assets/images/2021-04-18-searching-the-ipfs/cats-vs-laser.png"
   overlay_image: "/assets/images/default_overlay.png"
- # overlay_filter: rgba(0, 0, 0, 0.7)4
-# header:
-#   teaser: "/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-3.jpg"
-#   overlay_image: "/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-3.jpg"
-#   overlay_filter: rgba(0, 0, 0, 0.7)
 tags :
   - guides
 ---
