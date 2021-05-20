@@ -38,6 +38,13 @@ Kees van Drongelen:
   bio : "(Interaction) Designer And Frontend Developer"
 
 Mathijs de Bruin:
-  name : "Mathijs de Bruin"
-  bio : "Inventor and Founder of ipfs-search.com"
-
+  name: "Mathijs de Bruin"
+  bio: "Inventor and Founder of ipfs-search.com"
+  avatar: "/assets/images/avatar_mathijs.jpg"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dokterbob/"
+    - label: "Email"
+      icon: "fas fa-envelope-square"
+      url: "mailto:mathijs@ipfs-search.com"

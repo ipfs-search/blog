@@ -11,7 +11,7 @@ tags:
   - history
 ---
 
-## A brief history of ipfs-search.com
+# A brief history of ipfs-search.com
 Over the last 5 years, we have been offering our search engine for the decentralized web through two iterations of front-ends, as well as through our [REST API](https://api.ipfs-search.com/). In 2016, we started out with an absolutely minimal frontend for a search engine, both in terms of technology (no framework was used) as well as the user experience and design. Those involved with IPFS for a while might remember the 'traditional' yellow look of our site.
 ![Our first front-end, back in 2016](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-old-1.png)
 
@@ -28,16 +28,16 @@ In addition, as a true Open Source project, we explicitly invite contributions f
 
 This is why we will now present to you our new front-end, in development, which will make ipfs-search.com (soon to be dweb search) easier to use, more reliable and more accessible for outside contributors.
 
-## What's in a name?
+# What's in a name?
 You might have noticed in the screenshot above that the name 'IPFS Search' is no longer used, instead we will be migrating towards 'dweb search' once the new front-end goes live.
 
 Of course, we will make a separate announcement about this! For now, it should suffice to explain that the decentralized web is larger than just IPFS!
 
-## Differences between Frontend frameworks
+# Differences between Frontend frameworks
 
 For the third iteration of the UI of IPFS Search we needed to reconsider the choice for a design tool. It is hard to compare frameworks. It is even harder when these frameworks have different focus points.
 
-### Front-end frameworks
+## Front-end frameworks
 A much debated topic in our team was the choice of a front-end framework.
 
 Search is paradoxically complex in interaction, while seemingly simple, users have a tremendous amount of expectations as to what search is supposed to do and how it is to function. What will happen when I enter my query? What will happen when I click on a result? How can I conveniently navigate between results?
@@ -56,7 +56,7 @@ In the end, the choice led to a shift of roles within the team; those who prefer
 
 We are very happy to have picked a front-end framework with clear concepts, a very active ecosystem and [excellent documentation](https://vuejs.org/v2/guide/) with a fair amount of [long term support](https://github.com/vuejs/roadmap#release-channels-and-lts). Here's a (biased) overview of how [VueJS compares with other frameworks](https://vuejs.org/v2/guide/comparison.html).
 
-### Design frameworks
+## Design frameworks
 In addition to the frameworks which tie user interfaces together, we carefully considered various frameworks to facilitate the actual layout of our user interface. A pixel is not a pixel is not a pixel; even after IE died, there are still many slight differences between browsers, there are different screen resolutions and types of devices (phones, phablets, tablets, desktops). In order not to have to reinvent the wheel, and to gain the agility discussed in the previous section, we use frameworks to scaffold the various components a user interacts with.
 
 These are the frameworks we considered for the redesign of our search engine's front-end:
@@ -71,7 +71,7 @@ After some trials and research we decided to continue with Material Design becau
 
 The choice for Vuetify makes it easy to expand the frontend team of IPFS Search thanks to the [excellent documetation](https://vuetifyjs.com/en/introduction/why-vuetify/#guide). The framework offers a broad tooling set for both experienced and less experienced frontend developers.
 
-## Supporting different document types
+# Supporting different document types
 
 For the different file types like documents, audio and video it would be nice to be able to select the appropriate type together with the query. So that you are able to refine your search results in an instant. In the previous iteration of the UI we used the Bootstrap Input group with Dropdown button built in. This was at the time a bit difficult to tweak, especially in responsive views. We had to use several CSS hacks in order to get things done right.
 
@@ -79,11 +79,11 @@ During the third iteration we had fewer difficulties implementing this pattern. 
 
 ![](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-2.png)
 
-## Filetype visibility
+# Filetype visibility
 
 In the first version of the IPFS Search UI, we wanted to enable the user to quickly distinguish different file types. We did this through displaying an icon in the list view with the relevant file type. Along with a coloured text to indicate the freshness of the results. In the second iteration we changed this approach by offering a special tailored view for each different file types.
 
-## From sketch to design
+# From sketch to design
 
 Back when we started our work, we used sketches to explore what kind of information we wanted to convey to users, how to best present it to them, and how to best craft the interaction.
 
@@ -94,7 +94,7 @@ Back when we started our work, we used sketches to explore what kind of informat
 And then, nearing the final stages of our design, it looks like this:
 ![](/assets/images/2021-04-18-towards-a-new-frontend/search-screenshot-new-3.jpg)
 
-## Check it out!
+# Check it out!
 Actually, as an Open Source project, the repository which we're working in is readily available on [GitHub](https://github.com/ipfs-search/dweb-search-frontend).
 
 And, thanks to the good folks over at [Fleek](https://fleek.co/), the latest development version of the frontend is automatically built and published to IPFS. Mind you, so far this is just a mockup; there are no *actual* search results here!

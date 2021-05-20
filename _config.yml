@@ -18,16 +18,16 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "ipfs-search.com blog"
 title_separator          : "|"
-subtitle                 : # site tagline that appears below site title in masthead
+# subtitle                 : "Searching the Universe since 2016"
 name                     : "ipfs-search.com"
 description              : "Project blog for ipfs-search.com"
 url                      : "https://blog.ipfs-search.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : ipfs-search/blog
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/ipfs_search_avatar.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+# breadcrumbs              : true
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
