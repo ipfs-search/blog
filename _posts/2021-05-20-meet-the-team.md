@@ -1,16 +1,13 @@
 ---
 layout: single
 title:  "The team behind ipfs-search"
-#excerpt: 
+excerpt: "In this post, we will have a look at the team that develop and manage ipfs-search."
 header :
   teaser: "/assets/images/default_overlay.png"
   overlay_image: "/assets/images/default_overlay.png"
 tags :
   - Team
 ---
-In this post, we will have a look at the team that develop and manage ipfs-search.
-
-
 <img src="/assets/images/avatar_mathijs.jpg" alt="drawing" width="200" />
 
 **Mathijs de Bruin** is the founder, lead developer, and maintainer of ipfs-search. He has extensive experience as a developer, data architecht, and entrepeneur. Founding member of the coop Visualspace, a web-solutions company. He graduated in physics and philosophy at the University of Amsterdam in 2010 where he won the New Ideas Contest in 2009.
