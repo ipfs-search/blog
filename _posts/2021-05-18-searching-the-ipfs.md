@@ -1,7 +1,8 @@
 ---
 layout: single
-title:  "Discover new content on the IPFS using ipfs-search.com --- a quick guide using funny cat videos"
-excerpt: "An quick guide on how to use ipfs-search.com to look for specific content on IPFS, such as cat videos."
+title:  Discover content on IPFS using ipfs-search.com
+author: Lars Magne Tungland
+excerpt: A quick guide on how to use ipfs-search.com to look for specific content on IPFS, such as cat videos.
 header :
   teaser: "/assets/images/2021-04-18-searching-the-ipfs/cats-vs-laser.png"
   overlay_image: "/assets/images/default_overlay.png"
@@ -9,20 +10,20 @@ tags :
   - guides
 ---
 
-In this post, we will look at using ipfs-search.com in practice. Ipfs-search.com is a search engine for the Interplantetary File System (IPFS). As regular users of the internet will know, search is a good way to discover new content online. 
+In this post, we will look at using [ipfs-search.com](https://ipfs-search.com/), a search engine for the [Interplantetary File System (IPFS)](https://ipfs.io/), in practise. As regular users of the internet will know, search is a good way to discover new content online.
 
 **What is the IPFS**
 
-IPFS is the most popular solution for the distributed web. Here, rather than being hosted on web servers, online data is distributed across a peer-to-peer network of computers that act as both clients and servers. 
+IPFS is the most popular solution for the distributed web. Here, rather than being hosted on web servers, online data is distributed across a peer-to-peer network of computers that act as both clients and servers.
 
 The IPFS is to the distributed web what the Hypertext Transfer Protocol (HTTP) is to the World Wide Web (WWW). But there are some key differences between the two systems:
 
-* **Content IDs:** Rather than having domain links take you to a location and showing you whatever is kept there, the IPFS works with unique content hashes. These are URIs that points to a specific item, such as a webpage, a video file, etc. 
+* **Content IDs:** Rather than having domain links take you to a location and showing you whatever is kept there, the IPFS works with unique content hashes. These are URIs that points to a specific item, such as a webpage, a video file, etc.
 * **Peer-to-peer hosting:** Since specific items are found via a content hash, it is possible to download it from multiple sources. This makes it possible to distribute hosting over a network of computers. This means that you are not reliant on single web servers. If a server goes down, you can find your item from another using its CID.
 
-**What can you find on the IPFS?** Anything that people chooses to upload. IPFS hosts web pages, text, audio, and video files. For example, the English Wikipedia has been cloned. You can now read all about [Aardvarks](https://gateway.ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Aardvark.html) on a page hosted on the distributed web.
+**What can you find on the IPFS?** Anything that people chooses to upload. IPFS hosts web pages, text, audio, and video files. For example, IPFS has succesfully been used to [bypass censorship of Wikipedia](https://blog.ipfs.io/24-uncensorable-wikipedia/). You can now read all about [Aardvarks](https://gateway.ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Aardvark.html) on a page hosted on the distributed web.
 
-Finding things hosted on the IPFS is not always easy. Content hashes are not really readable to humans. Luckily, we provide the option to search the IPFS. 
+Finding things hosted on the IPFS is not always easy. Content hashes are not really readable to humans. Luckily, we provide the option to search the IPFS.
 
 ## Searching the IPFS
 
@@ -30,7 +31,7 @@ Using ipfs-search is now really simple. All you have to do is go to our [homepag
 
 [![Example search](/assets/images/2021-04-18-searching-the-ipfs/screenshot3.png)](https://ipfs-search.com/#/search)
 
-And *voila* --- we now have access to hours and hours of delightfully cute cats doing funny things. 
+And *voila* --- we now have access to hours and hours of delightfully cute cats doing funny things.
 
 [![Search results](/assets/images/2021-04-18-searching-the-ipfs/cat-results.png)](https://ipfs-search.com/#/search?kind=video&search=cats)
 
