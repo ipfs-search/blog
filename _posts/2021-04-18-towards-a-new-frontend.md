@@ -99,4 +99,4 @@ Actually, as an Open Source project, the repository which we're working in is re
 
 And, thanks to the good folks over at [Fleek](https://fleek.co/), the latest development version of the frontend is automatically built and published to IPFS. Mind you, so far this is just a mockup; there are no *actual* search results here!
 
-The static version of the frontend is here: https://dweb-search-frontend.on.fleek.co/
+The static version of the frontend is here: [https://dweb-search-frontend.on.fleek.co/](https://dweb-search-frontend.on.fleek.co/)
