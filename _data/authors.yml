@@ -20,7 +20,7 @@ Billy Rick:
 
 Lars Magne Tungland:
   name      : "Lars Magne Tungland"
-  bio       : "ipfs-search henchman"
+  #bio       : 
   #avatar    :
   links:
 #    - label: "Email"
