@@ -6,10 +6,6 @@ header :
  teaser: "/assets/images/default_overlay.png"
  overlay_image: "/assets/images/default_overlay.png"
 ---
-
-
-# Making ipfs-search distributed
-
 Here we provide a sketch for how distributed search could be realized for the IPFS and the distributed web. Many thanks to Nina for creating it.
 
 How we could realize distributed search:
