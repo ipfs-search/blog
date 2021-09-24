@@ -162,9 +162,7 @@ def free_text_query(string):
 
 **AND**
 
-For an AND use an intersection instead of a union to aggregate the results of the single word queries.[^query]
-
-[^query]: https://niverel.tymyrddin.space/en/play/stones/upsidedown/querying
+For an AND use an intersection instead of a union to aggregate the results of the single word queries.
 
 ### Phrase query
 
