@@ -196,15 +196,13 @@ def phrase_query(string, invertedIndex):
 
 Yggdrasil is an early-stage implementation of a fully end-to-end encrypted IPv6 network. It is lightweight, self-arranging, supported on multiple platforms and allows pretty much any IPv6-capable application to communicate securely with other Yggdrasil nodes. Yggdrasil does not require IPv6 Internet connectivity - it also works over IPv4.
 
-Looking at it for its clustering and bootstrapping implementation.[^yggdrasil]
-
-[^yggdrasil]: https://niverel.tymyrddin.space/en/play/stones/upsidedown/yggdrasil
+Looking at it for its clustering and bootstrapping implementation.
 
 ### Resources
 
 
--   [Yggdrasil Version 0.3.6](https://yggdrasil-network.github.io/2019/08/03/release-v0-3-6.html "https://yggdrasil-network.github.io/2019/08/03/release-v0-3-6.html"), august 2019, first version with API    
--   [Yggdrasil](https://github.com/yggdrasil-network/yggdrasil-go "https://github.com/yggdrasil-network/yggdrasil-go"), Github
+-   [Yggdrasil](https://yggdrasil-network.github.io/)  
+-   [Yggdrasil Github](https://github.com/yggdrasil-network/yggdrasil-go)
 
 
 
