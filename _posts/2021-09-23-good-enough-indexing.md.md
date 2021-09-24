@@ -7,9 +7,6 @@ header :
  overlay_image: "/assets/images/default_overlay.png"
 ---
 
-
-# Good enough indexing
-
 How to distribute the indexing of ipfs-search? Can we use existing algorithms to create a "good enough" system? Thanks to Nina for helping us with the research on this.
 
 
