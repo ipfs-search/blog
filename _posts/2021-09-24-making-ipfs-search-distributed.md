@@ -6,9 +6,11 @@ header :
  teaser: "/assets/images/default_overlay.png"
  overlay_image: "/assets/images/default_overlay.png"
 ---
-Here we provide a sketch for how distributed search could be realized for the IPFS and the distributed web. Many thanks to Nina for creating it.
+# A sketch for how distributed search could be realized for the IPFS and the distributed web 
 
-How we could realize distributed search:
+***Special thanks to Nina for creating this sketch***
+
+### How we could realize distributed search:
 
 -   Provider nodes that wish to participate, parse and index only the files they have added to a dweb (DHT hashes) and that have world file permissions. 
 -   This local index is put on an (IPFS) cluster. 
@@ -20,7 +22,7 @@ How we could realize distributed search:
 
 Control for users.
 
-### Sketch
+## Sketch
 
 
 The ballon d'essai can consist of:
@@ -33,7 +35,7 @@ The ballon d'essai can consist of:
 
 
 
-## Overlay networks
+### Overlay networks
 
 
 An IPFS node can be fingerprinted through the content it stores. An overlay network needs to offer an “anonymous” mode that only enables features known to not leak information.
@@ -44,7 +46,7 @@ An IPFS node can be fingerprinted through the content it stores. An overlay netw
     
 
 
-## Parsing
+### Parsing
 
 
 We could code different parsers for each type of file but that is not our main focus at the moment, and because a Python port of the Apache Tika library exists that according to the documentation supports text extraction from over 1500 file formats, we go with that, at least for now. But it is slow, and in the future we may reconsider.
@@ -105,7 +107,7 @@ def walkthrough ()
     -   IPFS can replace mirror indexes with IPNS addresses. We will still need reliable hosting for these initial seeders.
         
 
-### Risks
+## Risks
 IPFS is still in alpha development. That means there are a lot of (undiscovered) bugs and vulnerabilities and the code is not stable. This could create (security) problems.
     
 
@@ -218,7 +220,6 @@ Looking at it for its clustering and bootstrapping implementation.
 -   Predictive analysis 
     -   Test for false negatives and false positives of the various classifiers with unlabelled traffic data[^testing]
 
-       
 
 ### Resources
 
