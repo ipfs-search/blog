@@ -6,7 +6,11 @@ header :
   teaser: "/assets/images/default_overlay.png"
   overlay_image: "/assets/images/default_overlay.png"
 ---
-Making a truly distributed and decentralized service is a *hard problem<sup>TM</sup>*. There are many issues to solve , such as:
+# Making a truly distributed and decentralized service is a *hard problem<sup>TM</sup>*
+
+***Special thanks to Nina for helping us with the research***
+
+There are many issues to solve , such as:
 * dynamic neighbourhood clustering;
 * low-friction security and privacy;
 * search rank fraud detection.
@@ -15,8 +19,6 @@ Making a truly distributed and decentralized service is a *hard problem<sup>TM</
 We want to find tech that will make it possible to solve these, and distribute and decentralize ipfs-search. 
 
 In this post, we will look at currently existing theories and algorithm that could allow us to make that possible. 
-
-Many thanks to Nina for helping us with the research for this.
 
 
 ## Blockchain 
