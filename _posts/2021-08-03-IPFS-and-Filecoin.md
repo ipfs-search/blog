@@ -10,7 +10,9 @@ tags :
   - Filecoin
 ---
 
-Ipfs-search is the search engine for the distributed web. And what is that? Several services and protocols make up the distributed web. In this post, we will look at two of the main ones, IPFS and FileCoin, and how they are put together.
+# Ipfs-search is the search engine for the distributed web. And what is that? 
+
+Several services and protocols make up the distributed web. In this post, we will look at two of the main ones, IPFS and FileCoin, and how they are put together.
 
 
 
