@@ -5,6 +5,10 @@ excerpt: How to distribute the indexing of ipfs-search? Can we use existing algo
 header :
  teaser: "/assets/images/indexing.jpg"
  overlay_image: "/assets/images/indexing.jpg"
+ overlay_filter: rgba(0, 0, 0, 0.7)
+tags:
+  - blockchain
+  - indexing
 ---
 
 # How to distribute the indexing of ipfs-search? Can we use existing algorithms to create a "good enough" system? 
