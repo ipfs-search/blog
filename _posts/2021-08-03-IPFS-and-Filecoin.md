@@ -3,8 +3,8 @@ layout: single
 title:  "IPFS and Filecoin"
 excerpt: "A look at the infrastructures of two of the main systems that make up the distributed web: IPFS and FileCoin"
 header :
-  teaser: "/assets/images/default_overlay.png"
-  overlay_image: "/assets/images/default_overlay.png"
+  teaser: "/assets/images/filecoin.jpg"
+  overlay_image: "/assets/images/filecoin.jpg"
 tags :
   - IPFS
   - Filecoin
