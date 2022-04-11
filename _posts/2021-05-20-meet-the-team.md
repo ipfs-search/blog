@@ -3,8 +3,8 @@ layout: single
 title:  "The team behind ipfs-search"
 excerpt: "In this post, we will have a look at the team that develop and manage ipfs-search."
 header :
-  teaser: "/assets/images/default_overlay.png"
-  overlay_image: "/assets/images/default_overlay.png"
+  teaser: "/assets/images/team.jpg"
+  overlay_image: "/assets/images/team.jpg"
 tags :
   - Team
 ---
