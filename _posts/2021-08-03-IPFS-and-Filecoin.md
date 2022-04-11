@@ -5,6 +5,7 @@ excerpt: "A look at the infrastructures of two of the main systems that make up 
 header :
   teaser: "/assets/images/filecoin.jpg"
   overlay_image: "/assets/images/filecoin.jpg"
+  overlay_filter: rgba(0, 0, 0, 0.7)
 tags :
   - IPFS
   - Filecoin
