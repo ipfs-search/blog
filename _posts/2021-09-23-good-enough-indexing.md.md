@@ -3,8 +3,8 @@ layout: single
 title:  "Good enough indexing"
 excerpt: How to distribute the indexing of ipfs-search? Can we use existing algorithms to create a "good enough" system? 
 header :
- teaser: "/assets/images/default_overlay.png"
- overlay_image: "/assets/images/default_overlay.png"
+ teaser: "/assets/images/indexing.jpg"
+ overlay_image: "/assets/images/indexing.jpg"
 ---
 
 # How to distribute the indexing of ipfs-search? Can we use existing algorithms to create a "good enough" system? 
