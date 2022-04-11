@@ -3,8 +3,8 @@ layout: single
 title:  "Decentralizing ipfs-search part I: How to make ipfs-search decentralized and distributed"
 excerpt: "An overview of theories and algorithms that could enable distribution and decentralization ipfs-search"
 header :
-  teaser: "/assets/images/distribution.jpg"
-  overlay_image: "/assets/images/distribution.jpg"
+  teaser: "/assets/images/decentralization2.jpg"
+  overlay_image: "/assets/images/decentralization2.jpg"
 ---
 # Making a truly distributed and decentralized service is a *hard problem<sup>TM</sup>*
 
