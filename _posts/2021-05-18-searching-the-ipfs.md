@@ -5,7 +5,7 @@ author: Lars Magne Tungland
 excerpt: A quick guide on how to use ipfs-search.com to look for specific content on IPFS, such as cat videos.
 header :
   teaser: "/assets/images/2021-04-18-searching-the-ipfs/cats-vs-laser.png"
-  overlay_image: "/assets/images/default_overlay.png"
+  overlay_image: "/assets/images/2021-04-18-searching-the-ipfs/cats-vs-laser.png"
 tags :
   - guides
 ---
