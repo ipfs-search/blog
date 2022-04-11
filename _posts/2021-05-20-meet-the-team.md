@@ -5,6 +5,7 @@ excerpt: "In this post, we will have a look at the team that develop and manage 
 header :
   teaser: "/assets/images/team.jpg"
   overlay_image: "/assets/images/team.jpg"
+  overlay_filter: rgba(0, 0, 0, 0.7)
 tags :
   - Team
 ---
