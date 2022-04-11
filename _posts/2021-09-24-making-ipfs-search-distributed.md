@@ -5,6 +5,11 @@ excerpt: A sketch of how it could be done
 header :
  teaser: "/assets/images/ditribution.jpg"
  overlay_image: "/assets/images/ditribution.jpg"
+ overlay_filter: rgba(0, 0, 0, 0.7)
+tags:
+  - Cluster
+  - Yggdrasil
+  
 ---
 # A sketch for how distributed search could be realized for the IPFS and the distributed web 
 
