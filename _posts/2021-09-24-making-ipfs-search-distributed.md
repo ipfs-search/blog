@@ -3,8 +3,8 @@ layout: single
 title:  "Making ipfs-search distributed"
 excerpt: A sketch of how it could be done
 header :
- teaser: "/assets/images/decentralization2.jpg"
- overlay_image: "/assets/images/decentralization2.jpg"
+ teaser: "/assets/images/ditribution.jpg"
+ overlay_image: "/assets/images/ditribution.jpg"
 ---
 # A sketch for how distributed search could be realized for the IPFS and the distributed web 
 
