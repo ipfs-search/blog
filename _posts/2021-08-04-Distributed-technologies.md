@@ -5,6 +5,12 @@ excerpt: "An overview of theories and algorithms that could enable distribution 
 header :
   teaser: "/assets/images/decentralization2.jpg"
   overlay_image: "/assets/images/decentralization2.jpg"
+  overlay_filter: rgba(0, 0, 0, 0.7)
+  tags :
+  - blockchain
+  - distribution
+  - holochain
+  - hashgraph
 ---
 # Making a truly distributed and decentralized service is a *hard problem<sup>TM</sup>*
 
