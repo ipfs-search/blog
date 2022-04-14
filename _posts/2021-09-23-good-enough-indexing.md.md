@@ -22,6 +22,6 @@ tags:
     
  Pages and objects come in over time and need to be inserted, other pages and objects have been deleted and this means that all of the indexes have to be modified too: For documents, this means postings updates for terms already in the dictionary, new terms need to be added to the dictionary, and all associated indexes such as N-gram indexes will have to be updated for each added or deleted document. This can be made easy by making an auxiliary index and [logarithmic merge](https://niverel.tymyrddin.space/en/play/algos/dynindex#logarithmic-merge "en:play:algos:dynindex") of the main and auxiliary index.
  
- <img src="/assets/images/Graph-Protocol-678x381" alt="drawing" width="200" />
+ <img src="/assets/images/Graph-Protocol-678x381.png" alt="drawing" width="200" />
     
  [The Graph](https://medium.com/graphprotocol "https://medium.com/graphprotocol") is a protocol for building decentralized applications using GraphQL. In essence, [the graph](https://thegraph.com/ "https://thegraph.com/") is a decentralized index that works across blockchains (it can index data in multiple blockchains like Ethereum and BTC, but also on IPFS and Filecoin). It monitors the blockchains for new data and updates the index every time this happens. Once the index is updated, it tries to reach a consensus among the nodes that maintain it. Once it reaches consensus, it ensures that the users of the index will have the latest data available. Not all challenges are solved yet. 
