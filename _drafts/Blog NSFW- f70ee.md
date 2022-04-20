@@ -3,8 +3,8 @@ layout: single
 title:  "# Blog: NSFW-filter for ipfs-search.com"
 excerpt: When we upgraded the frontend for IPFS-search, it became immediately apparent that there was a lot of X-rated material on ipfs, and this made the browsing experience less than pleasant at times.
 header :
- teaser: "/assets/images/ditribution.jpg"
- overlay_image: "/assets/images/ditribution.jpg"
+ teaser: "(Blog%20NSFW-%20f70ee/Untitled%203.png)"
+ overlay_image: "(Blog%20NSFW-%20f70ee/Untitled%203.png)"
  overlay_filter: rgba(0, 0, 0, 0.7)
 tags:
   - NSFW-filter
