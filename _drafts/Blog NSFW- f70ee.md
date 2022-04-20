@@ -1,12 +1,16 @@
-# Blog: NSFW-filter for ipfs-search.com
-
-Created: April 7, 2022 9:42 AM
-Last Edited Time: April 15, 2022 4:26 PM
-Stakeholders: Anonymous
-Status: In Progress
-Tags: nsfw
-Type: Blogpost
-
+---
+layout: single
+title:  "# Blog: NSFW-filter for ipfs-search.com"
+excerpt: When we upgraded the frontend for IPFS-search, it became immediately apparent that there was a lot of X-rated material on ipfs, and this made the browsing experience less than pleasant at times.
+header :
+ teaser: "/assets/images/ditribution.jpg"
+ overlay_image: "/assets/images/ditribution.jpg"
+ overlay_filter: rgba(0, 0, 0, 0.7)
+tags:
+  - NSFW-filter
+  - Frontend
+  
+---
 ## The problem
 
 When we upgraded the frontend for IPFS-search, and while doing so made the graphic content a lot more visible, it became immediately apparent that there was a lot of X-rated material on ipfs, and this made the browsing experience less than pleasant at times. Most search queries turned up at least some imagery of explicit scenes;
