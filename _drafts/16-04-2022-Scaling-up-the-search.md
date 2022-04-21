@@ -27,7 +27,7 @@ Currently, we have capacity of 20 TB, and we are planning to have 60 TB by Decem
 
 ## But let us walk you through what have been going on in our headquarters recently.
 	
-	One of our ways to limit risk margin is to use physical servers instead of, very popular now, cloud servers. 
+One of our ways to limit risk margin is to use physical servers instead of, very popular now, cloud servers. 
   After a careful research we have chosen Hetzner hosting, a German company that provides climate neutral servers, which was also important for us. 
   Why exactly we decided to use live servers? We like to keep an eye on what’s going on, be close to the bare metal. 
   That let us track temperature, track delays on individual discs, we know about every hardware failure, 
