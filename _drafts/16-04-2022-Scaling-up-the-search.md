@@ -25,7 +25,7 @@ Currently, we have capacity of 20 TB, and we are planning to have 60 TB by Decem
 
 <img src="/assets/images/5servers.png" alt="drawing" width="300" /> 
 
-	## Bet let us walk you through what have been going on in our headquarters recently.
+## But let us walk you through what have been going on in our headquarters recently.
 	
 	One of our ways to limit risk margin is to use physical servers instead of, very popular now, cloud servers. 
   After a careful research we have chosen Hetzner hosting, a German company that provides climate neutral servers, which was also important for us. 
