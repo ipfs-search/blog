@@ -7,7 +7,6 @@ header:
   teaser: "/assets/images/nodes.png"
   overlay_image: "/assets/nodes.png"
   overlay_filter: rgba(0, 0, 0, 0.7)
-  
 ---
 
 ### For the past few months, we have been working on the search architecture to take ipfs-search from beta to web-scale production 
