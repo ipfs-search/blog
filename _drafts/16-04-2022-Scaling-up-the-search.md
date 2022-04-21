@@ -18,14 +18,11 @@ This puts us on the path to the 1000 hits per second; a thousand users every sec
 We are now in the middle of the way, running on 30 servers, and we are looking at having 100 servers by the end of the year, and later, 
 to grow exponentially. 
 
-<img src="/assets/images/servers.jpg" alt="drawing" width="300" />
-
-<img src="/assets/images/3servers.jpg" alt="drawing" />
+<img src="/assets/images/servers.jpg" alt="drawing" width="300" /> <img src="/assets/images/3servers.jpg" alt="drawing" />
 
 Currently, we have capacity of 20 TB, and we are planning to have 60 TB by December. It is a real challenge as typical computer stores 1 TB and copying this 1 TB from one computer to another is about 10 hours. 
 
 	Bet let us walk you through what have been going on in our headquarters recently.
-  
 	One of our ways to limit risk margin is to use physical servers instead of, very popular now, cloud servers. 
   After a careful research we have chosen Hetzner hosting, a German company that provides climate neutral servers, which was also important for us. 
   Why exactly we decided to use live servers? We like to keep an eye on what’s going on, be close to the bare metal. 
