@@ -19,9 +19,9 @@ Billy Rick:
       url: "https://github.com/ipfs-search/ipfs-search"
 
 Lars Magne Tungland:
-  name      : "Lars Magne Tungland"
-  #bio       : 
-  #avatar    :
+  name: "Lars Magne Tungland"
+  #bio: 
+  #avatar:
   links:
 #    - label: "Email"
 #      icon: "fas fa-envelope-square"
@@ -34,8 +34,9 @@ Lars Magne Tungland:
 #      url: "https://github.com/ipfs-search/ipfs-search"
 
 Kees van Drongelen:
-  name : "Kees van Drongelen"
-  bio : "(Interaction) Designer And Frontend Developer"
+  name: "Kees van Drongelen"
+  bio: "(Interaction) Designer And Frontend Developer"
+  avatar: "/assets/images/kees_avatar.png"
 
 Mathijs de Bruin:
   name: "Mathijs de Bruin"
@@ -49,10 +50,10 @@ Mathijs de Bruin:
       icon: "fas fa-envelope-square"
       url: "mailto:mathijs@ipfs-search.com"
       
-      Frido Emans:
-  name      : "Frido Emans"
-  #bio       : 
-  #avatar    :
+Frido Emans:
+  name: "Frido Emans"
+  #bio: 
+  avatar: "/assets/images/frido_avatar.jpg"
   links:
 #    - label: "Email"
 #      icon: "fas fa-envelope-square"
@@ -63,3 +64,19 @@ Mathijs de Bruin:
 #    - label: "GitHub"
 #      icon: "fab fa-fw fa-github"
 #      url: "https://github.com/ipfs-search/ipfs-search"
+
+Aad Versteden:
+  name: "Aad Versteden"
+  #bio: 
+  avatar: "/assets/images/aad_avatar.jpg"
+  links:
+#    - label: "Email"
+#      icon: "fas fa-envelope-square"
+#      url: "mailto:info@ipfs-search.com"
+#    - label: "Website"
+#     icon: "fas fa-fw fa-link"
+#      url: "https://ipfs-search.com/#/search"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/ipfs-search/ipfs-search"
+
