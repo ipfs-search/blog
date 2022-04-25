@@ -48,3 +48,18 @@ Mathijs de Bruin:
     - label: "Email"
       icon: "fas fa-envelope-square"
       url: "mailto:mathijs@ipfs-search.com"
+      
+      Frido Emans:
+  name      : "Frido Emans"
+  #bio       : 
+  #avatar    :
+  links:
+#    - label: "Email"
+#      icon: "fas fa-envelope-square"
+#      url: "mailto:info@ipfs-search.com"
+#    - label: "Website"
+#     icon: "fas fa-fw fa-link"
+#      url: "https://ipfs-search.com/#/search"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/ipfs-search/ipfs-search"
