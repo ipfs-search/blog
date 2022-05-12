@@ -17,12 +17,12 @@ As some of you know, we are supported by [NLNet](https://nlnet.nl/project/IPFS-s
 
 Right now, we have indexing capacity of 20 TB, and we are planning to have 60 TB by December. It is a real challenge as a typical computer stores 1 TB and copying this 1 TB from one computer to another is about 10 hours.
 
-<div align="center">
-<img src="/assets/images/3servers.png" width="60%" height="60%">
+<div align="left">
+<img src="/assets/images/3servers.png">
 </div>
 
-<div align="center">
-<img src="/assets/images/5servers.png" width="60%" height="60%">
+<div align="right">
+<img src="/assets/images/5servers.png">
 </div>
 
 
@@ -39,7 +39,7 @@ In the beginning we have been indexing on one server, the most powerful server a
 So, when we went up to 2 servers, and there were no problems, it was a great surprise. Our deployments are automated, we are using Ansible. This allowed us in the past to change a hosting company in about two days. It is a reasonable solution to deal with multiple servers. Instead of executing a gazillion commands for every server manually, and checking the results, Ansible does this for us. But the architecture, what server does what, and telling that in the correct way to Ansible, was the challenge.
 
 <div align="center">
-<img src="/assets/images/graf1.png" width="60%" height="60%">
+<img src="/assets/images/graf1.png">
 </div>
 
 ## Redundancy
@@ -63,6 +63,6 @@ In addition to this, we make daily snapshots of our index, so that even if we ac
 So we came a long way from 1 document to 500 documents being indexed or updated at the same time, and we're still improving and optimizing various part of this system. The challenge here was (and still is) finding a golden way to tune the shards, and keep our cluster healthy and balanced.
 
 <div align="center">
-<img src="/assets/images/nodes.png" width="60%" height="60%">
+<img src="/assets/images/nodes.png">
 </div>
 
