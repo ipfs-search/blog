@@ -17,13 +17,12 @@ As some of you know, we are supported by [NLNet](https://nlnet.nl/project/IPFS-s
 
 Right now, we have indexing capacity of 20 TB, and we are planning to have 60 TB by December. It is a real challenge as a typical computer stores 1 TB and copying this 1 TB from one computer to another is about 10 hours.
 
-<div align="left">
 <img src="/assets/images/3servers.png">
-</div>
 
-<div align="right">
+----------------
+
 <img src="/assets/images/5servers.png">
-</div>
+
 
 
 ## **But let us walk you through what have been going on in our headquarters recently**
@@ -32,9 +31,9 @@ One of our ways to limit costs is to use physical servers instead of, very popul
 
 In the beginning we have been indexing on one server, the most powerful server at Hetzner’s and of course at one point it ran full. We had to shut down the indexing, because we weren’t able to take new files. All this was caused by the fact that in the previous year we made some changes to the crawler (the part that extracts data from the hashes and indexes them) that made it about 100 times faster. So suddenly, instead of indexing 0.1 document per second, we were indexing about 10 documents per second. The consequence was obvious — scaling up the hosting. 
 
-`
-🛠 We weren't expecting a totally smooth transition, as we know that designing a perfect cluster is almost impossible at the beginning.
-`
+
+### 🛠 We weren't expecting a totally smooth transition, as we know that designing a perfect cluster is almost impossible at the beginning.
+
 
 So, when we went up to 2 servers, and there were no problems, it was a great surprise. Our deployments are automated, we are using Ansible. This allowed us in the past to change a hosting company in about two days. It is a reasonable solution to deal with multiple servers. Instead of executing a gazillion commands for every server manually, and checking the results, Ansible does this for us. But the architecture, what server does what, and telling that in the correct way to Ansible, was the challenge.
 
