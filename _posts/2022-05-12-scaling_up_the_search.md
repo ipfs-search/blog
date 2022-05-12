@@ -1,28 +1,28 @@
+---
 layout: single
-title:  "Scaling up the search – what we have been doing last months"
+title: Scaling up the search
 author: ZM
-excerpt: For the past few months, we have been working on the search
-architecture to take ipfs-search from beta to web-scale production
-header:
+excerpt: For the past few months, we have been working on the search architecture to take IPFS Search from beta to web-scale production.
+header :
   teaser: "/assets/images/nodes.png"
   overlay_image: "/assets/images/nodes.png"
   overlay_filter: rgba(0, 0, 0, 0.7)
----
-### For the past few months, we have been working on the search
-architecture to take ipfs-search from beta to web-scale production
+tags :
+  - development
 ---
 
 As some of you know, we are supported by [NLNet](https://nlnet.nl/project/IPFS-search/) through the EU's Next Generation Internet (NGI0) programme, which stimulates network research and development of the free Internet, to design a pilot of scaling up our infrastructure. We are successfully following a plan to move step-by-step from one server to a 5 node cluster setup, then to 15 servers, then later we'll scale up through 30, 50 and up to 100 nodes. This puts us on the path to 1000 hits per second; a thousand users every second searching something. We are now in the middle of the way, running on 30 servers. The current experiment is for us to *learn how* to scale our infrastructure up, until 100 nodes.
 
 Right now, we have indexing capacity of 20 TB, and we are planning to have 60 TB by December. It is a real challenge as a typical computer stores 1 TB and copying this 1 TB from one computer to another is about 10 hours.
 
-![servers.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e72c465-af63-4bec-8df3-45b9fbbf28f3/servers.jpg)
+<div align="center">
+<img src="/assets/images/3servers.png" width="60%" height="60%">
+</div>
 
-![3servers.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/545a703a-7fb9-42ec-b441-c86b90e71350/3servers.png)
+<div align="center">
+<img src="/assets/images/5servers.png" width="60%" height="60%">
+</div>
 
-Pics proposition.
-
-![5servers.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/987faa5d-f05a-40ea-a76f-225c4315bd82/5servers.png)
 
 ## **But let us walk you through what have been going on in our headquarters recently**
 
@@ -31,13 +31,16 @@ One of our ways to limit costs is to use physical servers instead of, very popul
 In the beginning we have been indexing on one server, the most powerful server at Hetzner’s and of course at one point it ran full. We had to shut down the indexing, because we weren’t able to take new files. All this was caused by the fact that in the previous year we made some changes to the crawler (the part that extracts data from the hashes and indexes them) that made it about 100 times faster. So suddenly, instead of indexing 0.1 document per second, we were indexing about 10 documents per second. The consequence was obvious — scaling up the hosting. 
 
 <aside>
+  
 🛠 We weren't expecting a totally smooth transition, as we know that designing a perfect cluster is almost impossible at the beginning.
 
 </aside>
 
-So, when we went up to 2 servers, and there were no problems, it was a great surprise. Our deployments are automated, we are using Ansible. This allowed us in the past to change a hosting company in about two days. It is a reasonable solution **to deal with multiple servers. Instead of executing a gazillion commands for every server manually, and checking the results, Ansible does this for us. But the architecture, what server does what, and telling that in the correct way to Ansible, was the challenge.
+So, when we went up to 2 servers, and there were no problems, it was a great surprise. Our deployments are automated, we are using Ansible. This allowed us in the past to change a hosting company in about two days. It is a reasonable solution to deal with multiple servers. Instead of executing a gazillion commands for every server manually, and checking the results, Ansible does this for us. But the architecture, what server does what, and telling that in the correct way to Ansible, was the challenge.
 
-![graf1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c04d4b6-cb3f-4fed-b9c3-698ab064b4bd/graf1.png)
+<div align="center">
+<img src="/assets/images/graf1.png" width="60%" height="60%">
+</div>
 
 ## Redundancy
 
@@ -59,4 +62,7 @@ In addition to this, we make daily snapshots of our index, so that even if we ac
 
 So we came a long way from 1 document to 500 documents being indexed or updated at the same time, and we're still improving and optimizing various part of this system. The challenge here was (and still is) finding a golden way to tune the shards, and keep our cluster healthy and balanced.
 
-![nodes.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f9ddc058-d22b-4b17-b65e-0cd9847c25bd/nodes.png)
+<div align="center">
+<img src="/assets/images/nodes.png" width="60%" height="60%">
+</div>
+
