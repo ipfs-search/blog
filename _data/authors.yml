@@ -51,7 +51,7 @@ Mathijs de Bruin:
       url: "mailto:mathijs@ipfs-search.com"
       
       
- Zuzanna Majer     
+ Zuzanna Majer:     
   name: "ZM"
   #bio: 
   #avatar: 
@@ -68,7 +68,7 @@ Frido Emans:
   #bio: 
   avatar: "/assets/images/frido_avatar.jpg"
   links:
-- label: "Email"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:info@ipfs-search.com"
     - label: "Website"
