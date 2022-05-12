@@ -32,11 +32,9 @@ One of our ways to limit costs is to use physical servers instead of, very popul
 
 In the beginning we have been indexing on one server, the most powerful server at Hetzner’s and of course at one point it ran full. We had to shut down the indexing, because we weren’t able to take new files. All this was caused by the fact that in the previous year we made some changes to the crawler (the part that extracts data from the hashes and indexes them) that made it about 100 times faster. So suddenly, instead of indexing 0.1 document per second, we were indexing about 10 documents per second. The consequence was obvious — scaling up the hosting. 
 
-<aside>
-  
+`
 🛠 We weren't expecting a totally smooth transition, as we know that designing a perfect cluster is almost impossible at the beginning.
-
-</aside>
+`
 
 So, when we went up to 2 servers, and there were no problems, it was a great surprise. Our deployments are automated, we are using Ansible. This allowed us in the past to change a hosting company in about two days. It is a reasonable solution to deal with multiple servers. Instead of executing a gazillion commands for every server manually, and checking the results, Ansible does this for us. But the architecture, what server does what, and telling that in the correct way to Ansible, was the challenge.
 
