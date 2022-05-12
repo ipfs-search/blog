@@ -52,9 +52,9 @@ Mathijs de Bruin:
       
       
  Zuzanna Majer     
-  name        : "ZM"
-  bio         : "a begginer"
-  #avatar      : 
+  name: "ZM"
+  #bio: 
+  #avatar: 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -68,15 +68,15 @@ Frido Emans:
   #bio: 
   avatar: "/assets/images/frido_avatar.jpg"
   links:
-#    - label: "Email"
-#      icon: "fas fa-envelope-square"
-#      url: "mailto:info@ipfs-search.com"
-#    - label: "Website"
-#     icon: "fas fa-fw fa-link"
-#      url: "https://ipfs-search.com/#/search"
-#    - label: "GitHub"
-#      icon: "fab fa-fw fa-github"
-#      url: "https://github.com/ipfs-search/ipfs-search"
+ - label: "Email"
+   icon: "fas fa-envelope-square"
+     url: "mailto:info@ipfs-search.com"
+    - label: "Website"
+     icon: "fas fa-fw fa-link"
+      url: "https://ipfs-search.com/#/search"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ipfs-search/ipfs-search"
 
 Aad Versteden:
   name: "Aad Versteden"
