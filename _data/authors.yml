@@ -50,6 +50,19 @@ Mathijs de Bruin:
       icon: "fas fa-envelope-square"
       url: "mailto:mathijs@ipfs-search.com"
       
+      
+ Zuzanna Majer     
+  name        : "ZM"
+  bio         : "a begginer"
+  #avatar      : 
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:zuzanna.majer@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Szeket"     
+      
 Frido Emans:
   name: "Frido Emans"
   #bio: 
