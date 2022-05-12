@@ -9,9 +9,11 @@ header :
   overlay_filter: rgba(0, 0, 0, 0.7)
 tags :
   - development
+  - NLNet 
+  - NGI0
 ---
 
-As some of you know, we are supported by [NLNet](https://nlnet.nl/project/IPFS-search/) through the EU's Next Generation Internet (NGI0) programme, which stimulates network research and development of the free Internet, to design a pilot of scaling up our infrastructure. We are successfully following a plan to move step-by-step from one server to a 5 node cluster setup, then to 15 servers, then later we'll scale up through 30, 50 and up to 100 nodes. This puts us on the path to 1000 hits per second; a thousand users every second searching something. We are now in the middle of the way, running on 30 servers. The current experiment is for us to *learn how* to scale our infrastructure up, until 100 nodes.
+As some of you know, we are supported by [NLNet](https://nlnet.nl/project/IPFS-search/) through the EU's [Next Generation Internet (NGI0)](https://www.ngi.eu/) programme, which stimulates network research and development of the free Internet, to design a pilot of scaling up our infrastructure. We are successfully following a plan to move step-by-step from one server to a 5 node cluster setup, then to 15 servers, then later we'll scale up through 30, 50 and up to 100 nodes. This puts us on the path to 1000 hits per second; a thousand users every second searching something. We are now in the middle of the way, running on 30 servers. The current experiment is for us to *learn how* to scale our infrastructure up, until 100 nodes.
 
 Right now, we have indexing capacity of 20 TB, and we are planning to have 60 TB by December. It is a real challenge as a typical computer stores 1 TB and copying this 1 TB from one computer to another is about 10 hours.
 
