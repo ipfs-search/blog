@@ -35,9 +35,19 @@ Lars Magne Tungland:
 
 Kees van Drongelen:
   name: "Kees van Drongelen"
+  #bio: 
+  #avatar:
+  links:
+#    - label: "Email"
+#      icon: "fas fa-envelope-square"
+#      url: "mailto:info@ipfs-search.com"
+#    - label: "Website"
+#     icon: "fas fa-fw fa-link"
+#      url: "https://ipfs-search.com/#/search"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/ipfs-search/ipfs-search"
  
- 
-
 Mathijs de Bruin:
   name: "Mathijs de Bruin"
   bio: "Inventor and Founder of ipfs-search.com"
