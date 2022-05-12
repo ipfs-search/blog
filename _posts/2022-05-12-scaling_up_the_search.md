@@ -1,4 +1,3 @@
----
 layout: single
 title:  "Scaling up the search – what we have been doing last months"
 author: ZM
@@ -10,8 +9,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.7)
 ---
 ### For the past few months, we have been working on the search
-architecture to **take ipfs-search from beta to web-scale production
-
+architecture to take ipfs-search from beta to web-scale production
 ---
 
 As some of you know, we are supported by [NLNet](https://nlnet.nl/project/IPFS-search/) through the EU's Next Generation Internet (NGI0) programme, which stimulates network research and development of the free Internet, to design a pilot of scaling up our infrastructure. We are successfully following a plan to move step-by-step from one server to a 5 node cluster setup, then to 15 servers, then later we'll scale up through 30, 50 and up to 100 nodes. This puts us on the path to 1000 hits per second; a thousand users every second searching something. We are now in the middle of the way, running on 30 servers. The current experiment is for us to *learn how* to scale our infrastructure up, until 100 nodes.
