@@ -18,6 +18,7 @@ Billy Rick:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ipfs-search/ipfs-search"
 
+
 Lars Magne Tungland:
   name: "Lars Magne Tungland"
   #bio: 
@@ -33,6 +34,7 @@ Lars Magne Tungland:
 #      icon: "fab fa-fw fa-github"
 #      url: "https://github.com/ipfs-search/ipfs-search"
 
+
 Kees van Drongelen:
   name: "Kees van Drongelen"
   #bio: 
@@ -47,6 +49,7 @@ Kees van Drongelen:
 #    - label: "GitHub"
 #      icon: "fab fa-fw fa-github"
 #      url: "https://github.com/ipfs-search/ipfs-search"
+ 
  
 Mathijs de Bruin:
   name: "Mathijs de Bruin"
@@ -72,6 +75,7 @@ Mathijs de Bruin:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Szeket/"     
+      
       
 Frido Emans:
   name: "Frido Emans"
