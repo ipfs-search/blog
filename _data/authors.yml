@@ -63,10 +63,10 @@ Mathijs de Bruin:
       url: "mailto:mathijs@ipfs-search.com"
       
       
- Zuzanna Majer:
+Zuzanna Majer:
   name: "ZM"
   #bio: 
-  #avatar: 
+  avatar: "/assets/images/avatar_oszka.jpg" 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
