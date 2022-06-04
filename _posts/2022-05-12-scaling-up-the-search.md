@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Scaling up the search
-author: ZM
+author:ZM
 excerpt: For the past few months, we have been working on the search architecture to take IPFS Search from beta to web-scale production
 header :
   teaser: "/assets/images/nodes.png"
