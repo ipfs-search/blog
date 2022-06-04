@@ -17,6 +17,7 @@ Billy Rick:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ipfs-search/ipfs-search"
 
+
 Lars Magne Tungland:
   name: "Lars Magne Tungland"
   #bio: 
@@ -32,6 +33,7 @@ Lars Magne Tungland:
 #      icon: "fab fa-fw fa-github"
 #      url: "https://github.com/ipfs-search/ipfs-search"
 
+
 Kees van Drongelen:
   name: "Kees van Drongelen"
   #bio: 
@@ -46,7 +48,8 @@ Kees van Drongelen:
 #    - label: "GitHub"
 #      icon: "fab fa-fw fa-github"
 #      url: "https://github.com/ipfs-search/ipfs-search"
-
+ 
+ 
 Mathijs de Bruin:
   name: "Mathijs de Bruin"
   bio: "Inventor and Founder of ipfs-search.com"
@@ -58,8 +61,9 @@ Mathijs de Bruin:
     - label: "Email"
       icon: "fas fa-envelope-square"
       url: "mailto:mathijs@ipfs-search.com"
-
-Zuzanna Majer:
+      
+      
+ Zuzanna Majer:     
   name: "ZM"
   #bio: 
   #avatar: 
@@ -70,7 +74,8 @@ Zuzanna Majer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Szeket/"     
-
+      
+      
 Frido Emans:
   name: "Frido Emans"
   #bio: 
@@ -86,6 +91,7 @@ Frido Emans:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/femans/"
 
+
 Aad Versteden:
   name: "Aad Versteden"
   #bio: 
@@ -100,4 +106,3 @@ Aad Versteden:
 #    - label: "GitHub"
 #      icon: "fab fa-fw fa-github"
 #      url: "https://github.com/ipfs-search/ipfs-search"
-
