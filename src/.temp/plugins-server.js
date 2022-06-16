@@ -1,4 +1,4 @@
-import plugin_gridsome_plugin_tailwindcss_5 from "/Users/drbob/Development/blog/ipfs-search-blog/node_modules/gridsome-plugin-tailwindcss/gridsome.client.js"
+import plugin_gridsome_plugin_tailwindcss_5 from "/Users/drbob/Development/blog/node_modules/gridsome-plugin-tailwindcss/gridsome.client.js"
 
 export default [
   {

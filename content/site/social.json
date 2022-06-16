@@ -1,16 +1,12 @@
 {
   "social": [
     {
-      "icon": "facebook",
-      "link": "https://www.facebook.com"
+      "icon": "email",
+      "link": "mailto:info@ipfs-search.com"
     },
     {
-      "icon": "twitter",
-      "link": "https://twitter.com/"
-    },
-    {
-      "icon": "linkedin",
-      "link": "https://www.linkedin.com"
+      "icon": "github",
+      "link": "https://github.com/ipfs-search/"
     }
   ]
 }

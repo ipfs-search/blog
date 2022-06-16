@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Casper',
-  siteDescription: 'an awesome Gridsome starter kit',
-  siteUrl: 'http://localhost:8080',
+  siteName: 'ipfs-search.com blog',
+  siteDescription: 'Project blog for ipfs-search.com',
+  siteUrl: 'https://blog.ipfs-search.com',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',

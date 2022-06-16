@@ -11,9 +11,24 @@
       "external": false
     },
     {
-      "name": "Getting started",
-      "link": "/category/getting-started",
-      "external": false
+      "name": "Code",
+      "link": "http://github.com/ipfs-search/",
+      "external": true
+    },
+    {
+      "name": "Documentation",
+      "link": "https://ipfs-search.readthedocs.io/en/latest/",
+      "external": true
+    },
+    {
+      "name": "Donate",
+      "link": "https://opencollective.com/ipfs-search",
+      "external": true
+    },
+    {
+      "name": "ipfs-search.com",
+      "link": "https://ipfs-search.com",
+      "external": true
     }
   ],
   "footerNavigation": [{
@@ -22,19 +37,9 @@
       "external" : false
     },
     {
-      "name": "Facebook",
-      "link": "https://www.facebook.com",
+      "name": "Chat",
+      "link": "https://matrix.to/#/#ipfs-search:matrix.org",
       "external": true
-    },
-    {
-      "name": "Gridsome",
-      "link": "https://www.gridsome.org",
-      "external": true
-    },
-    {
-      "name": "RSS",
-      "link": "/rss.xml",
-      "external": false
     }
   ]
 }
