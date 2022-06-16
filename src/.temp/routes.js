@@ -60,10 +60,6 @@ export default [
     component: c1
   },
   {
-    path: "/category/user-experience/:page(\\d+)?/",
-    component: c2
-  },
-  {
     path: "/category/usability/:page(\\d+)?/",
     component: c2
   },

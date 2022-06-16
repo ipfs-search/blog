@@ -8,8 +8,10 @@
     }">
       <div class="block flex-grow flex items-center w-auto">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <font-awesome :icon="['fas', 'ghost']" class="mr-3"></font-awesome>
+          <a href="https://blog.ipfs-search.com">
+          <span><img src="@/favicon.svg" style="display: inline; height: 1em; width: 1em;" /></span>
           <span class="font-semibold text-xl tracking-tight">{{ $static.metadata.siteName }}</span>
+          </a>
         </div>
         <div class="text-sm flex-grow uppercase">
           <ul 
