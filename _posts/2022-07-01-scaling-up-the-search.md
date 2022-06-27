@@ -11,11 +11,14 @@ tags :
   - development
   - NLNet 
   - NGI0
+  - Filecoin
 ---
 
-As some of you know, we are supported by [NLNet](https://nlnet.nl/project/IPFS-search/) through the EU's [Next Generation Internet (NGI0)](https://www.ngi.eu/) programme, which stimulates network research and development of the free Internet, to design a pilot of scaling up our infrastructure. We are successfully following a plan to move step-by-step from one server to a 5 node cluster setup, then to 15 servers, then later we'll scale up through 30, 50 and up to 100 nodes. This puts us on the path to 1000 hits per second; a thousand users every second searching something. We are now in the middle of the way, running on 30 servers. The current experiment is for us to *learn how* to scale our infrastructure up, until 100 nodes.
+As some of you know, we are supported by [NLNet](https://nlnet.nl/project/IPFS-search/) through the EU's [Next Generation Internet (NGI0)](https://www.ngi.eu/) programme, which stimulates network research and development of the free Internet, to do the architecture for scaling up our infrastructure. We are additionally supported by the [Filecoin Foundation](https://fil.org/), who support the growth of the distributed web, through a [devgrant](https://github.com/ipfs-search/devgrants/blob/96d07f4662c10f3936163dacbf13bfc5c23b8cc6/open-grant-proposals/ipfs-search-scale-out.md), whichs helps us to actually implement the  scale-out.
 
-Right now, we have indexing capacity of 20 TB, and we are planning to have 60 TB by December. It is a real challenge as a typical computer stores 1 TB and copying this 1 TB from one computer to another is about 10 hours.
+We successfully followed our plan to move step-by-step from one server to a 5 node cluster setup, then to 15 servers, and now we are scaling up through 30, 50 and up to 100 nodes. This puts us on the path to 1000 hits per second; a thousand users every second searching something. We are now in the middle of the way, running on 30 servers. The current experiment is for us to *learn how* to scale our infrastructure up, until 100 nodes.
+
+Right now, we have indexing capacity of 20 TB, and we are planning to have 100 TB by the end of our scale-out experiment. It is a real challenge as a typical computer stores around 1 TB and copying this 1 TB from one computer to another can take hours.
 
 <img src="/assets/images/3servers.png">
 
@@ -29,7 +32,7 @@ Right now, we have indexing capacity of 20 TB, and we are planning to have 60 TB
 
 One of our ways to limit costs is to use physical servers instead of, very popular, cloud servers. This choice is also recommended by Elasticsearch, which we use. After a careful research, we have chosen Hetzner hosting, a German company that provides climate neutral servers, which was also important for us. Why exactly we decided to use bare metal servers? We like to keep an eye on what’s going on. We are able to track temperature and delays on individual discs, we know about every hardware failure, every unusual behaviour pattern and if we were using virtual server we wouldn’t know all these things. Also, the costs are about a factor 10 lower, because we use a lot of data, memory, storage, CPU and I/O. 
 
-In the beginning we have been indexing on one server, the most powerful server at Hetzner’s and of course at one point it ran full. We had to shut down the indexing, because we weren’t able to take new files. All this was caused by the fact that in the previous year we made some changes to the crawler (the part that extracts data from the hashes and indexes them) that made it about 100 times faster. So suddenly, instead of indexing 0.1 document per second, we were indexing about 10 documents per second. The consequence was obvious — scaling up the hosting. 
+In the beginning we have been indexing on one server, the most powerful server at Hetzner’s and of course at one point it ran full. We had to shut down the indexing, because we weren’t able to take new files. All this was caused by the fact that in the previous year we made some changes to the crawler (the part that extracts data from the hashes and indexes them) that made it about 100 times faster. So suddenly, instead of indexing 0.1 document per second, we were indexing about 10 documents per second. The consequence was obvious — scaling up the hosting.
 
 
 ### 🛠 We weren't expecting a totally smooth transition, as we know that designing a perfect cluster is almost impossible at the beginning.
