@@ -4,15 +4,15 @@ title:  "Breaking the silent consent - closer to the free Internet, an interview
 author: Zuzanna Majer
 excerpt: Online privacy and security are too rarely questioned by ordinary users. Taking them for granted comes from the fact that most people believe they have control over the information they share. 
 header:
-  teaser: "/assets/images/2021-06-03-breaking-the-silent consent/13105939224_cd1a9956b7_o.jpg"
-  overlay_image: "/assets/images/2021-06-03-breaking-the-silent consent/13105939224_cd1a9956b7_o.jpg"
+  teaser: "/assets/images/2021-06-03-breaking-the-silent-consent/13105939224_cd1a9956b7_o.jpg"
+  overlay_image: "/assets/images/2021-06-03-breaking-the-silent-consent/13105939224_cd1a9956b7_o.jpg"
   overlay_filter: rgba(0, 0, 0, 0.7)
 ---
 
 # Breaking the silent consent - closer to the free Internet, an interview with the founder of IPFS Search
 
+<img src="/assets/images/2021-06-03-breaking-the-silent-consent/Artboard_1.svg">
 
-![Artboard 1.svg](/assets/images/2021-06-03-breaking-the-silent consent/Artboard_1.svg)
 
 Online privacy and security are too rarely questioned by ordinary users. Taking them for granted comes from the fact that most people believe they have control over the information they share. Most of us live in silent consent to something that, in a non-virtual society, we would never give permission for. Not everyone has the time to use alternative tools, search engines, browsers, plug-ins, and a range of security features. Learning new things takes time, and with that, as with everything else, the primacy of convenience wins out.
 
