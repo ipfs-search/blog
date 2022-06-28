@@ -11,10 +11,9 @@ header:
 
 # Breaking the silent consent - closer to the free Internet, an interview with the founder of IPFS Search
 
-<img src="/assets/images/2021-06-03-breaking-the-silent-consent/Artboard_1.svg">
-
-
 Online privacy and security are too rarely questioned by ordinary users. Taking them for granted comes from the fact that most people believe they have control over the information they share. Most of us live in silent consent to something that, in a non-virtual society, we would never give permission for. Not everyone has the time to use alternative tools, search engines, browsers, plug-ins, and a range of security features. Learning new things takes time, and with that, as with everything else, the primacy of convenience wins out.
+
+<img src="/assets/images/2021-06-03-breaking-the-silent-consent/Artboard_1.svg">
 
 Still, there is a safer future for the Internet, and it’s us, users, who should fight to bring this future into today.
 
