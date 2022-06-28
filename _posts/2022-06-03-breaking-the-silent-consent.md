@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Breaking the silent consent - closer to the free Internet, an interview with the founder of IPFS Search"
-author: Zuzanna Majer
+author: Zuzanna Majer, Mathijs de Bruin
 excerpt: Online privacy and security are too rarely questioned by ordinary users. Taking them for granted comes from the fact that most people believe they have control over the information they share. 
 header:
   teaser: "/assets/images/2021-06-03-breaking-the-silent-consent/13105939224_cd1a9956b7_o.jpg"
