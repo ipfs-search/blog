@@ -20,7 +20,7 @@ Still, there is a safer future for the Internet, and it’s us, users, who shou
 
 Our guest is Mathijs de Bruin, founder, and inventor of [IPFS Search](http://ipfs-search.com/), a search engine indexing the open-source Interplanetary File System which describes itself as “a peer-to-peer hypermedia protocol designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open.”
 
-![Untitled](Breaking%20the%20silent%20consent%20-%20closer%20to%20the%20free%20I%2075af7b6f46d9449cb750c19164424030/Untitled.png)
+<img src="/assets/images/2021-06-03-breaking-the-silent-consent/Untitled.png">
 
 **ZM:** **Maybe before we really start this talk, tell us how this description of the project you contribute to, resonates with you?**
 
@@ -30,7 +30,8 @@ So, as hacker technologists, we are the people that maintain the Internet infras
 
 Let’s remember that initially the Internet was set up as a research protocol, among research institutions, mostly by the US government. It was created to be resilient against outsiders’ attacks, specifically nuclear attacks. But it wasn’t set up to be resilient to censorship or cyberattacks. 
 
-![Internet backbone as of January 15, 2005. [CC BY 2.5](https://en.wikipedia.org/wiki/Internet_backbone#/media/File:Internet_map_1024.jpg)](Breaking%20the%20silent%20consent%20-%20closer%20to%20the%20free%20I%2075af7b6f46d9449cb750c19164424030/Internet_map_1024.jpg)
+<img src="/assets/images/2021-06-03-breaking-the-silent-consent/Internet_map_1024.jpg">
+![Internet backbone as of January 15, 2005. By The Opte Project - Originally from the English Wikipedia, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=1538544]
 
 Internet backbone as of January 15, 2005. [CC BY 2.5](https://en.wikipedia.org/wiki/Internet_backbone#/media/File:Internet_map_1024.jpg)
 
