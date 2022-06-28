@@ -1,11 +1,16 @@
+---
+layout: single
+title:  "Breaking the silent consent - closer to the free Internet, an interview with the founder of IPFS Search"
+author: Zuzanna Majer
+excerpt: Online privacy and security are too rarely questioned by ordinary users. Taking them for granted comes from the fact that most people believe they have control over the information they share. 
+header:
+  teaser: "/assets/images/2021-06-03-breaking-the-silent consent/13105939224_cd1a9956b7_o.jpg"
+  overlay_image: "/assets/images/2021-06-03-breaking-the-silent consent/13105939224_cd1a9956b7_o.jpg"
+  overlay_filter: rgba(0, 0, 0, 0.7)
+---
+
 # Breaking the silent consent - closer to the free Internet, an interview with the founder of IPFS Search
 
-Created: June 3, 2022 11:05 AM
-Last Edited Time: June 24, 2022 9:04 AM
-Status: Approved
-Type: Blogpost
-
-<Add nice new photo of Mathijs in the forest here>
 
 ![Artboard 1.svg](Breaking%20the%20silent%20consent%20-%20closer%20to%20the%20free%20I%2075af7b6f46d9449cb750c19164424030/Artboard_1.svg)
 
