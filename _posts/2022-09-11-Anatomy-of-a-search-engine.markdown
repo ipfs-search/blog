@@ -206,10 +206,10 @@ Also, we'll be moving to a different queuing system where we can have multiple s
 
 **Resources:**
 
-[https://github.com/ipfs-search/ipfs-search/tree/master/components/sniffer](https://github.com/ipfs-search/ipfs-search/tree/master/components/sniffer)
+- [https://github.com/ipfs-search/ipfs-search/tree/master/components/sniffer](https://github.com/ipfs-search/ipfs-search/tree/master/components/sniffer)
 
-[https://github.com/ipfs-search/tika-extractor](https://github.com/ipfs-search/tika-extractor)
+- [https://github.com/ipfs-search/tika-extractor](https://github.com/ipfs-search/tika-extractor)
 
-[https://pkg.go.dev/github.com/ipfs-search/ipfs-search@v0.0.0-20220404092707-198591df419c/components/sniffer](https://pkg.go.dev/github.com/ipfs-search/ipfs-search@v0.0.0-20220404092707-198591df419c/components/sniffer)
+- [https://pkg.go.dev/github.com/ipfs-search/ipfs-search@v0.0.0-20220404092707-198591df419c/components/sniffer](https://pkg.go.dev/github.com/ipfs-search/ipfs-search@v0.0.0-20220404092707-198591df419c/components/sniffer)
 
-[https://github.com/libp2p/hydra-booster/commit/d8438c7b58d7f3639c22252e97873c42617cf389](https://github.com/libp2p/hydra-booster/commit/d8438c7b58d7f3639c22252e97873c42617cf389)
+- [https://github.com/libp2p/hydra-booster/commit/d8438c7b58d7f3639c22252e97873c42617cf389](https://github.com/libp2p/hydra-booster/commit/d8438c7b58d7f3639c22252e97873c42617cf389)
