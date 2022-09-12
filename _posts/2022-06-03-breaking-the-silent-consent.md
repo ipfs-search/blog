@@ -29,8 +29,9 @@ So, as hacker technologists, we are the people that maintain the Internet infras
 
 Let’s remember that initially the Internet was set up as a research protocol, among research institutions, mostly by the US government. It was created to be resilient against outsiders’ attacks, specifically nuclear attacks. But it wasn’t set up to be resilient to censorship or cyberattacks. 
 
-![Internet Map](../assets/images/2021-06-03-breaking-the-silent-consent/Internet_map_1024.jpg "image")
-Internet backbone as of January 15, 2005. [CC BY 2.5](https://commons.wikimedia.org/w/index.php?curid=1538544)
+| ![Internet Map](../assets/images/2021-06-03-breaking-the-silent-consent/Internet_map_1024.jpg "image") |
+|:--:| 
+| *Internet backbone as of January 15, 2005. [CC BY 2.5](https://commons.wikimedia.org/w/index.php?curid=1538544)* |
 
 
 The way I see it is that the only reason we have free internet right now is because a lot of people that are maintaining core infrastructure have very strong morals and principles. It is not accidental that the Internet used to be an open, free protocol. Now we have mobile providers who offer *free* Internet for Facebook, YouTube, and Spotify, but not in general. And at the same time, we see that Facebooks and YouTubes of this world are applying [various](https://www.bmj.com/content/375/bmj.n2635/rr-80) [kinds](https://theintercept.com/2020/10/15/facebook-and-twitter-cross-a-line-far-more-dangerous-than-what-they-censor/) of [censorship](https://www.eff.org/deeplinks/2020/03/ninth-circuit-private-social-media-platforms-are-not-bound-first-amendment) to a frightening degree. We are talking about free, democratic societies. It’s a complete erosion of civil liberties that... we didn’t really have until the advent of cyberspace, and now we are already looking to lose them. We’ve been worried about that in the hacker community for a long time. 
