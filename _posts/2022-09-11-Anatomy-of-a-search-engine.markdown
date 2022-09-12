@@ -95,16 +95,15 @@ We store them in our database which lives on the cluster consisting of several s
 
 ### A crawler
 
-
 | <img src="/assets/images/Anatomy_of_a_search_engine/3458011826_ec2838a13c_o.jpg"> | 
 |:--:| 
 | *CC BY-NC-SA 2.0 by [Héctor García](https://www.flickr.com/photos/torek/3458011826)* |
 
 A typical search engine also works with web crawlers. A crawler, or sometimes web spider, or, surprisingly, a spiderbot, is a bot, another piece of software, that visits webpages and indexes content that is uploaded by the users. It is also necessary to keep this content up to date and can be helpful with validating hyperlinks or HTML code.
 
-![Sketch of the ipfs-search.com architecture] <img src="/assets/images/Anatomy_of_a_search_engine/ipfs-search-arch-inv.png)
-
-Sketch of the ipfs-search.com architecture
+| <img src="/assets/images/Anatomy_of_a_search_engine/ipfs-search-arch-inv.png"> | 
+|:--:| 
+| *Sketch of the ipfs-search.com architecture* |
 
 The ipfs-search.com crawler is also the component that orchestrates the process of extracting metadata from all data that is flowing through our network. 
 
