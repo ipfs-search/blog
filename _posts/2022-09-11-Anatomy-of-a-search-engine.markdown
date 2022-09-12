@@ -72,15 +72,15 @@ Our sniffer is currently run on a single node, where we do deduplication of snif
 
 Then we just need gossip. 
 
-![CC-BY-NC-SA 4.0 via [SL Enquirer](http://www.slenquirer.com/2014/04/gossip-in-sl-aint-nobody-got-time-for.html)] <img src="/assets/images/Anatomy_of_a_search_engine/gossip1.jpg>
-
-CC-BY-NC-SA 4.0 via [SL Enquirer](http://www.slenquirer.com/2014/04/gossip-in-sl-aint-nobody-got-time-for.html)
+| <img src="/assets/images/Anatomy_of_a_search_engine/gossip1.jpg"> | 
+|:--:| 
+| *CC-BY-NC-SA 4.0 via [SL Enquirer](http://www.slenquirer.com/2014/04/gossip-in-sl-aint-nobody-got-time-for.html)* |
 
 Exactly the same way when people go to the café to exchange important or less important information, in a peer-to-peer network (like Libp2p/IPFS, BitTorrent, or other content-addressed storage systems) nodes talk to other nodes about the content they have.
 
-![Scott Martin, CC BY-SA 3.0 [https://creativecommons.org/licenses/by-sa/3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons] <img src="/assets/images/Anatomy_of_a_search_engine/BitTorrent_network.svg>
-
-Scott Martin, CC BY-SA 3.0 [https://creativecommons.org/licenses/by-sa/3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons
+| <img src="/assets/images/Anatomy_of_a_search_engine/BitTorrent_network.svg"> | 
+|:--:| 
+| *Scott Martin, CC BY-SA 3.0 [https://creativecommons.org/licenses/by-sa/3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons* |
 
 They have rather simple conversations going on, like “Where is this file? Have you seen it?”, “Which node has it?”, “It was here, but now it’s there.” etc.  
 
@@ -95,9 +95,10 @@ We store them in our database which lives on the cluster consisting of several s
 
 ### A crawler
 
-![****CC BY-NC-SA 2.0 by [Héctor García](https://www.flickr.com/photos/torek/3458011826)**] <img src="/assets/images/Anatomy_of_a_search_engine/3458011826_ec2838a13c_o.jpg>
 
-****CC BY-NC-SA 2.0 by [Héctor García](https://www.flickr.com/photos/torek/3458011826)**
+| <img src="/assets/images/Anatomy_of_a_search_engine/3458011826_ec2838a13c_o.jpg"> | 
+|:--:| 
+| *CC BY-NC-SA 2.0 by [Héctor García](https://www.flickr.com/photos/torek/3458011826)* |
 
 A typical search engine also works with web crawlers. A crawler, or sometimes web spider, or, surprisingly, a spiderbot, is a bot, another piece of software, that visits webpages and indexes content that is uploaded by the users. It is also necessary to keep this content up to date and can be helpful with validating hyperlinks or HTML code.
 
