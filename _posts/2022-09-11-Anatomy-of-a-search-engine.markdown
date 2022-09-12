@@ -64,9 +64,9 @@ To make it more useful for our purposes, we created a ['middleware'/proxy](https
 
 Our sniffer is currently run on a single node, where we do deduplication of sniffed content. We are upgrading our architecture to allow for distributed sniffing of new content from IPFS’s DHT.
 
----
+
 > 📢 ipfs-search.com sniffer currently uses 12 heads to process about 3000 hashes per second.
----
+
 
 ### Gossip
 
@@ -84,10 +84,9 @@ Exactly the same way when people go to the café to exchange important or less i
 
 They have rather simple conversations going on, like “Where is this file? Have you seen it?”, “Which node has it?”, “It was here, but now it’s there.” etc.  
 
----
-> 📢 So how does ipfs-search.com do content discovery
-> how do we know what's on IPFS?
----
+
+> 📢 So how does ipfs-search.com do content discovery? How do we know what's on IPFS?
+
 
 For the network, we’re just a bunch of nodes, we listen to other nodes announcing what’s available. When we hear the message saying “I have this file, you can download it from me” a small signal passes through our network, and our crawler (the infrastructure that extracts metadata) gets the file and indexes it. 
 
