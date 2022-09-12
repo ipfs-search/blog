@@ -9,7 +9,6 @@ header:
   overlay_image: "assets/images/Anatomy_of_a_search_engine/documentslastmonth.png"
   overlay_filter: rgba(0, 0, 0, 0.7)
 ---
-
 In previous posts, we've covered the development of [frontend filters](https://blog.ipfs-search.com/NSFW-f70ee/), described progress on [scaling up the cluster architecture](https://blog.ipfs-search.com/scaling-up-the-search/), and glanced at the [importance of web security](https://blog.ipfs-search.com/breaking-the-silent-consent/). 
 
 Now it is time to dive a little deeper into what ipfs-search.com, and basically any modern search engine, consists of.
