@@ -15,7 +15,7 @@ In previous posts, we've covered the development of [frontend filters](https://b
 Now it is time to dive a little deeper into what ipfs-search.com, and basically any modern search engine, consists of.
 As this is a very complex topic, we will take the liberty here of viewing just a few selected elements.
 
-<img src="assets/images/Anatomy_of_a_search_engine/documentslastmonth.png">
+<img src="/assets/images/Anatomy_of_a_search_engine/documentslastmonth.png">
 
 Our latest statistics show that our index is growing rapidly. We store 20 TB of searchable data. Currently, every day, half a million documents are added to the index. 
 
@@ -27,13 +27,13 @@ If you go through [ipfs-search.com docs](https://ipfs-search.readthedocs.io/en/l
 
 Sounds cool, but what does that even mean? 
 
-![Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons] <img src="assets/images/Anatomy_of_a_search_engine/Dogs_sniffing_each_other.jpg">
+![Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons] <img src="/assets/images/Anatomy_of_a_search_engine/Dogs_sniffing_each_other.jpg">
 
 Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons
 
 When we send information over a computer network, it is broken down into smaller units. They are the smallest units of network communication, called data packets. The sender’s node (which is just a device connected to a network) breaks down each piece of information into these smallest units, and after completing their journey to the receiver’s node, they are reassembled into their originals. 
 
-![[https://commons.wikimedia.org/wiki/File:Network_packet.jpg](https://commons.wikimedia.org/wiki/File:Network_packet.jpg)](Anatomy%20of%20a%20search%20engine%2062e51b3a1a7042d6a303265b9865072b/Network_packet.jpg)
+![[https://commons.wikimedia.org/wiki/File:Network_packet.jpg](https://commons.wikimedia.org/wiki/File:Network_packet.jpg)] <img src="/assets/images/Anatomy_of_a_search_engine/Network_packet.jpg>
 
 [https://commons.wikimedia.org/wiki/File:Network_packet.jpg](https://commons.wikimedia.org/wiki/File:Network_packet.jpg)
 
@@ -43,7 +43,7 @@ Intercepting data packets on a computer network is called packet sniffing, and i
 
 The sniffing process looks similar to wiring a phone or eavesdropping behind the door, although it requires way more than only gathering data.
 
-![Wireshark CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons](Anatomy%20of%20a%20search%20engine%2062e51b3a1a7042d6a303265b9865072b/Wireshark_Example_Decode.png)
+![Wireshark CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons]< <img src="/assets/images/Anatomy_of_a_search_engine/Wireshark_Example_Decode.png>
 
 Wireshark CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons
 
@@ -53,7 +53,7 @@ A sniffer itself is a piece of software (like, for example, [Wireshark](https://
 
 [Our sniffer](https://github.com/ipfs-search/ipfs-search/tree/master/components/sniffer) does not commit any crimes though. It’s based on the existing [Hydra-Booster,](https://github.com/libp2p/hydra-booster) “A new type of DHT (Distributed Hash Tables) node designed to accelerate the Content Resolution & Content Providing on the IPFS Network. A (cute) Hydra with one belly full of records and many heads (Peer IDs) to tell other nodes about them, charged with rocket boosters to transport other nodes to their destination faster.” 
 
-![hydra booster.png](Anatomy%20of%20a%20search%20engine%2062e51b3a1a7042d6a303265b9865072b/hydra_booster.png)
+![hydra booster.png] <img src="/assets/images/Anatomy_of_a_search_engine/hydra_booster.png>
 
 To make it more useful for our purposes, we created a ['middleware'/proxy](https://pkg.go.dev/github.com/ipfs-search/ipfs-search@v0.0.0-20220720103450-c3d9687780aa/components/sniffer) between the part in IPFS/libp2p that stores what hosts have, so that every time it learns about something new, it gets passed to our crawler infrastructure.
 
@@ -68,13 +68,13 @@ Our sniffer is currently run on a single node, where we do deduplication of snif
 
 Then we just need gossip. 
 
-![CC-BY-NC-SA 4.0 via [SL Enquirer](http://www.slenquirer.com/2014/04/gossip-in-sl-aint-nobody-got-time-for.html)](Anatomy%20of%20a%20search%20engine%2062e51b3a1a7042d6a303265b9865072b/gossip1.jpg)
+![CC-BY-NC-SA 4.0 via [SL Enquirer](http://www.slenquirer.com/2014/04/gossip-in-sl-aint-nobody-got-time-for.html)] <img src="/assets/images/Anatomy_of_a_search_engine/gossip1.jpg>
 
 CC-BY-NC-SA 4.0 via [SL Enquirer](http://www.slenquirer.com/2014/04/gossip-in-sl-aint-nobody-got-time-for.html)
 
 Exactly the same way when people go to the café to exchange important or less important information, in a peer-to-peer network (like Libp2p/IPFS, BitTorrent, or other content-addressed storage systems) nodes talk to other nodes about the content they have.
 
-![Scott Martin, CC BY-SA 3.0 [https://creativecommons.org/licenses/by-sa/3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons](Anatomy%20of%20a%20search%20engine%2062e51b3a1a7042d6a303265b9865072b/BitTorrent_network.svg)
+![Scott Martin, CC BY-SA 3.0 [https://creativecommons.org/licenses/by-sa/3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons] <img src="/assets/images/Anatomy_of_a_search_engine/BitTorrent_network.svg>
 
 Scott Martin, CC BY-SA 3.0 [https://creativecommons.org/licenses/by-sa/3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons
 
@@ -91,13 +91,13 @@ We store them in our database which lives on the cluster consisting of several s
 
 ### A crawler
 
-![****CC BY-NC-SA 2.0 by [Héctor García](https://www.flickr.com/photos/torek/3458011826)**](Anatomy%20of%20a%20search%20engine%2062e51b3a1a7042d6a303265b9865072b/3458011826_ec2838a13c_o.jpg)
+![****CC BY-NC-SA 2.0 by [Héctor García](https://www.flickr.com/photos/torek/3458011826)**] <img src="/assets/images/Anatomy_of_a_search_engine/3458011826_ec2838a13c_o.jpg>
 
 ****CC BY-NC-SA 2.0 by [Héctor García](https://www.flickr.com/photos/torek/3458011826)**
 
 A typical search engine also works with web crawlers. A crawler, or sometimes web spider, or, surprisingly, a spiderbot, is a bot, another piece of software, that visits webpages and indexes content that is uploaded by the users. It is also necessary to keep this content up to date and can be helpful with validating hyperlinks or HTML code.
 
-![Sketch of the ipfs-search.com architecture](Anatomy%20of%20a%20search%20engine%2062e51b3a1a7042d6a303265b9865072b/ipfs-search-arch-inv.png)
+![Sketch of the ipfs-search.com architecture] <img src="/assets/images/Anatomy_of_a_search_engine/ipfs-search-arch-inv.png)
 
 Sketch of the ipfs-search.com architecture
 
