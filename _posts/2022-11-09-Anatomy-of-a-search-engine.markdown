@@ -9,12 +9,13 @@ header:
   overlay_image: "assets/images/Anatomy_of_a_search_engine/documentslastmonth.png"
   overlay_filter: rgba(0, 0, 0, 0.7)
 ---
+
 In previous posts, we've covered the development of [frontend filters](https://blog.ipfs-search.com/NSFW-f70ee/), described progress on [scaling up the cluster architecture](https://blog.ipfs-search.com/scaling-up-the-search/), and glanced at the [importance of web security](https://blog.ipfs-search.com/breaking-the-silent-consent/). 
 
 Now it is time to dive a little deeper into what ipfs-search.com, and basically any modern search engine, consists of.
 As this is a very complex topic, we will take the liberty here of viewing just a few selected elements.
 
-![documentslastmonth.png](Anatomy%20of%20a%20search%20engine%2062e51b3a1a7042d6a303265b9865072b/documentslastmonth.png)
+<img src="assets/images/Anatomy_of_a_search_engine/documentslastmonth.png">
 
 Our latest statistics show that our index is growing rapidly. We store 20 TB of searchable data. Currently, every day, half a million documents are added to the index. 
 
@@ -26,7 +27,7 @@ If you go through [ipfs-search.com docs](https://ipfs-search.readthedocs.io/en/l
 
 Sounds cool, but what does that even mean? 
 
-![Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons](Anatomy%20of%20a%20search%20engine%2062e51b3a1a7042d6a303265b9865072b/Dogs_sniffing_each_other.jpg)
+![Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons] <img src="assets/images/Anatomy_of_a_search_engine/Dogs_sniffing_each_other.jpg">
 
 Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons
 
