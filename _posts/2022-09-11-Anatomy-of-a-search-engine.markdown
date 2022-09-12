@@ -68,7 +68,6 @@ Our sniffer is currently run on a single node, where we do deduplication of snif
 > 📢 ipfs-search.com sniffer currently uses 12 heads to process about 3000 hashes per second.
 ---
 
-
 ### Gossip
 
 Then we just need gossip. 
