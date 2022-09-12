@@ -16,7 +16,7 @@ In previous posts, we've covered the development of [frontend filters](https://b
 Now it is time to dive a little deeper into what ipfs-search.com, and basically any modern search engine, consists of.
 As this is a very complex topic, we will take the liberty here of viewing just a few selected elements.
 
-<img src="/assets/images/Anatomy_of_a_search_engine/documentslastmonth.png">
+<img src="/assets/images/Anatomy_of_a_search_engine/documentslastmonth.png" align="center">
 
 Our latest statistics show that our index is growing rapidly. We store 20 TB of searchable data. Currently, every day, half a million documents are added to the index. 
 
