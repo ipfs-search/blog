@@ -35,9 +35,9 @@ Sounds cool, but what does that even mean?
 
 When we send information over a computer network, it is broken down into smaller units. They are the smallest units of network communication, called data packets. The sender’s node (which is just a device connected to a network) breaks down each piece of information into these smallest units, and after completing their journey to the receiver’s node, they are reassembled into their originals. 
 
-| <img src="/assets/images/Anatomy_of_a_search_engine/Dogs_sniffing_each_other.jpg"> | 
+| <img src="/assets/images/Anatomy_of_a_search_engine/Network_packet.jpg"> | 
 |:--:| 
-| *Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons* |
+| *[https://commons.wikimedia.org/wiki/File:Network_packet.jpg](https://commons.wikimedia.org/wiki/File:Network_packet.jpg), via Wikimedia Commons* |
 
 Data packets are commonly monitored by sysadmins for security reasons, to search for anomalies in traffic, and perform maintenance. 
 
