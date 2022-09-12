@@ -55,7 +55,7 @@ A sniffer itself is a piece of software (like, for example, [Wireshark](https://
 
 [Our sniffer](https://github.com/ipfs-search/ipfs-search/tree/master/components/sniffer) does not commit any crimes though. It’s based on the existing [Hydra-Booster,](https://github.com/libp2p/hydra-booster) “A new type of DHT (Distributed Hash Tables) node designed to accelerate the Content Resolution & Content Providing on the IPFS Network. A (cute) Hydra with one belly full of records and many heads (Peer IDs) to tell other nodes about them, charged with rocket boosters to transport other nodes to their destination faster.” 
 
-| <img src="/assets/images/Anatomy_of_a_search_engine/hydra_booster.png> | 
+| <img src="/assets/images/Anatomy_of_a_search_engine/hydra_booster.png"> | 
 |:--:| 
 | *Hydra-booster* |
 
