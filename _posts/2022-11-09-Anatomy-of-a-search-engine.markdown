@@ -3,12 +3,12 @@ layout: single
 title:  "Anatomy of a search engine"
 author: Zuzanna Majer
 excerpt: Our latest statistics show that our index is growing rapidly. We store 20 TB of searchable data. Currently, every day, half a million documents are added to the index. 
-Let's take a look at how is it done. Here we have the elements that are responsible for catching this data, classifying it, and giving them correct labels.
 header:
   teaser: "/assets/images/Anatomy_of_a_search_engine/documentslastmonth.png"
   overlay_image: "/assets/images/Anatomy_of_a_search_engine/documentslastmonth.png"
   overlay_filter: rgba(0, 0, 0, 0.7)
 ---
+
 # Anatomy of a search engine
 
 In previous posts, we've covered the development of [frontend filters](https://blog.ipfs-search.com/NSFW-f70ee/), described progress on [scaling up the cluster architecture](https://blog.ipfs-search.com/scaling-up-the-search/), and glanced at the [importance of web security](https://blog.ipfs-search.com/breaking-the-silent-consent/). 
