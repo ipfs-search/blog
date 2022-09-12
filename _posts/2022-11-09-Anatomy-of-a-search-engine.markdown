@@ -29,8 +29,8 @@ If you go through [ipfs-search.com docs](https://ipfs-search.readthedocs.io/en/l
 
 Sounds cool, but what does that even mean? 
 
-<img src="/assets/images/Anatomy_of_a_search_engine/Dogs_sniffing_each_other.jpg" align="center">
-Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons
+<img src="/assets/images/Anatomy_of_a_search_engine/Dogs_sniffing_each_other.jpg">
+*Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons*
 
 When we send information over a computer network, it is broken down into smaller units. They are the smallest units of network communication, called data packets. The sender’s node (which is just a device connected to a network) breaks down each piece of information into these smallest units, and after completing their journey to the receiver’s node, they are reassembled into their originals. 
 
