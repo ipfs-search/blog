@@ -86,7 +86,7 @@ They have rather simple conversations going on, like “Where is this file? Have
 
 ---
 > 📢 So how does ipfs-search.com do content discovery
-> —how do we know what's on IPFS?
+> how do we know what's on IPFS?
 ---
 
 For the network, we’re just a bunch of nodes, we listen to other nodes announcing what’s available. When we hear the message saying “I have this file, you can download it from me” a small signal passes through our network, and our crawler (the infrastructure that extracts metadata) gets the file and indexes it. 
