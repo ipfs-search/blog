@@ -47,7 +47,7 @@ The sniffing process looks similar to wiring a phone or eavesdropping behind the
 
 | <img src="/assets/images/Anatomy_of_a_search_engine/Wireshark_Example_Decode.png> | 
 |:--:| 
-| *[https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons]* |
+| *[https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons* |
 
 A sniffer itself is a piece of software (like, for example, [Wireshark](https://www.wireshark.org/), which provides GUI and some helpful analytics tools) that you connect to a computer network to see the traffic.
 
