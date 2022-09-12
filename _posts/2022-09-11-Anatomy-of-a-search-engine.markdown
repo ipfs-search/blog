@@ -45,11 +45,11 @@ Intercepting data packets on a computer network is called packet sniffing, and i
 
 The sniffing process looks similar to wiring a phone or eavesdropping behind the door, although it requires way more than only gathering data.
 
-| <img src="/assets/images/Anatomy_of_a_search_engine/Wireshark_Example_Decode.png> | 
-|:--:| 
-| *[https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons* |
-
 A sniffer itself is a piece of software (like, for example, [Wireshark](https://www.wireshark.org/), which provides GUI and some helpful analytics tools) that you connect to a computer network to see the traffic.
+
+| <img src="/assets/images/Anatomy_of_a_search_engine/Wireshark_Example_Decode.png"> | 
+|:--:| 
+| *Wireshark CC BY-SA 4.0[https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons* |
 
 ### ipfs-search.com sniffer
 
