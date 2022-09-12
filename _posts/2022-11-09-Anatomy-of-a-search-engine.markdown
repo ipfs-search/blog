@@ -5,8 +5,8 @@ author: Zuzanna Majer
 excerpt: Our latest statistics show that our index is growing rapidly. We store 20 TB of searchable data. Currently, every day, half a million documents are added to the index. 
 Let's take a look at how is it done. Here we have the elements that are responsible for catching this data, classifying it, and giving them correct labels.
 header:
-  teaser: "assets/images/Anatomy_of_a_search_engine/documentslastmonth.png"
-  overlay_image: "assets/images/Anatomy_of_a_search_engine/documentslastmonth.png"
+  teaser: "/assets/images/Anatomy_of_a_search_engine/documentslastmonth.png"
+  overlay_image: "/assets/images/Anatomy_of_a_search_engine/documentslastmonth.png"
   overlay_filter: rgba(0, 0, 0, 0.7)
 ---
 
