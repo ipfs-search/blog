@@ -31,13 +31,13 @@ Sounds cool, but what does that even mean?
 
 | <img src="/assets/images/Anatomy_of_a_search_engine/Dogs_sniffing_each_other.jpg"> | 
 |:--:| 
-| *urriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons* |
+| *Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons* |
 
 When we send information over a computer network, it is broken down into smaller units. They are the smallest units of network communication, called data packets. The sender’s node (which is just a device connected to a network) breaks down each piece of information into these smallest units, and after completing their journey to the receiver’s node, they are reassembled into their originals. 
 
-![[https://commons.wikimedia.org/wiki/File:Network_packet.jpg](https://commons.wikimedia.org/wiki/File:Network_packet.jpg)] <img src="/assets/images/Anatomy_of_a_search_engine/Network_packet.jpg>
-
-[https://commons.wikimedia.org/wiki/File:Network_packet.jpg](https://commons.wikimedia.org/wiki/File:Network_packet.jpg)
+| <img src="/assets/images/Anatomy_of_a_search_engine/Network_packet.jpg> | 
+|:--:| 
+| *[https://commons.wikimedia.org/wiki/File:Network_packet.jpg](https://commons.wikimedia.org/wiki/File:Network_packet.jpg)* |
 
 Data packets are commonly monitored by sysadmins for security reasons, to search for anomalies in traffic, and perform maintenance. 
 
@@ -45,9 +45,9 @@ Intercepting data packets on a computer network is called packet sniffing, and i
 
 The sniffing process looks similar to wiring a phone or eavesdropping behind the door, although it requires way more than only gathering data.
 
-![Wireshark CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons]< <img src="/assets/images/Anatomy_of_a_search_engine/Wireshark_Example_Decode.png>
-
-Wireshark CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons
+| <img src="/assets/images/Anatomy_of_a_search_engine/Wireshark_Example_Decode.png> | 
+|:--:| 
+| *[https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons]* |
 
 A sniffer itself is a piece of software (like, for example, [Wireshark](https://www.wireshark.org/), which provides GUI and some helpful analytics tools) that you connect to a computer network to see the traffic.
 
