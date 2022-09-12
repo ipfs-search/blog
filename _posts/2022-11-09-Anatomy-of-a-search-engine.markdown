@@ -28,7 +28,7 @@ If you go through [ipfs-search.com docs](https://ipfs-search.readthedocs.io/en/l
 
 Sounds cool, but what does that even mean? 
 
-![Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons] <img src="/assets/images/Anatomy_of_a_search_engine/Dogs_sniffing_each_other.jpg">
+![Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons] <img src="/assets/images/Anatomy_of_a_search_engine/Dogs_sniffing_each_other.jpg" align="center">
 
 Jurriaan Schulman, CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons
 
