@@ -102,7 +102,7 @@ We'll have to see what the performance impact is of running across nodes at some
 
 - https://github.com/redpencilio/ldes-publisher-service
 - https://github.com/redpencilio/ldes-prefix-autocomplete
-- [https://www.ted.com/talks/pieter_colpaert_open_data_to_create_power_for_the_many_not_the_few](https://www.ted.com/talks/pieter_colpaert_open_data_to_create_power_for_the_many_not_the_few)
+- [Ted Talk with Pieter Colpaert](https://www.ted.com/talks/pieter_colpaert_open_data_to_create_power_for_the_many_not_the_few)
 
 # How to run the application at home:
 
