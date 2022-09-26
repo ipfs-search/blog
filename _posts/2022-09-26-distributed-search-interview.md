@@ -1,8 +1,15 @@
-# Decentralised search: from dream to reality
+---
+layout: single
+title:  "Decentralised search: from dream to reality"
+author: Zuzanna Majer
+excerpt: At the beginning of May 2022, distributed web specialists from [redpencil.io](http://redpencil.io/) and [ipfs-search.com](http://ipfs-search.com) conducted an experiment to run a fully distributed search index at ipfs-search.com.. 
+header:
+  teaser: "/assets/images/2022-09-26-distributed-search-interview/screenshot-20220922-1822241.png"
+  overlay_image: "/assets/images/2022-09-26-distributed-search-interview/screenshot-20220922-1822241.png"
+  overlay_filter: rgba(0, 0, 0, 0.7)
+---
 
-Created: September 5, 2022 2:09 PM
-Last Edited Time: September 26, 2022 12:54 PM
-Stakeholders: Anonymous
+# Decentralised search: from dream to reality
 
 At the beginning of May 2022, distributed web specialists from [redpencil.io](http://redpencil.io/) and [ipfs-search.com](http://ipfs-search.com) conducted an experiment to run a fully distributed search index at ipfs-search.com. The experiment was created and performed by Aad Versteden, together with Elena Poelman, and was based on the research by professor [Pieter Colpaert](https://pietercolpaert.be/) of Ghent University.
 
