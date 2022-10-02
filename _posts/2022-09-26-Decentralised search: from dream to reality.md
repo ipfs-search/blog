@@ -100,9 +100,9 @@ We'll have to see what the performance impact is of running across nodes at some
 
 ## Further reading/watching:
 
-- https://github.com/redpencilio/ldes-publisher-service
-- https://github.com/redpencilio/ldes-prefix-autocomplete
-- https://github.com/redpencilio/fragmentation-producer-service
+- [https://github.com/redpencilio/ldes-publisher-service](https://github.com/redpencilio/ldes-publisher-service)
+- [https://github.com/redpencilio/ldes-prefix-autocomplete]( https://github.com/redpencilio/ldes-prefix-autocomplete)
+- [https://github.com/redpencilio/fragmentation-producer-service](https://github.com/redpencilio/fragmentation-producer-service)
 - [Ted Talk with Pieter Colpaert](https://www.ted.com/talks/pieter_colpaert_open_data_to_create_power_for_the_many_not_the_few)
 
 
