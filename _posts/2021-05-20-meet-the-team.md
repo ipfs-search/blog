@@ -29,9 +29,9 @@ An active Open Source contributor since he was 14, he is the visionary and lead 
 <img src="/assets/images/ali_avatar.jpeg" alt="drawing" width="200" />
 
 **Ali González** is a technologist with 14 years of experience in IT teams. For the last 8 years focusing on civic tech, civic innovation and
-software development. Currently head of strategy and community relations in Codeando México.
+software development. Currently, head of strategy and community relations in Codeando México.
 
 
-***Former with us:***
+**Former with us:**
 
 **Kees van Drongelen** the lead designer. An experienced graphic, web and UX designer. He is passionate about finding elegant solutions for complex questions. Kees is founder and CEO of Visualspace Media Design and Technology and currently working on a start-up project about monitoring politics in Amsterdam. He combines his work with teaching coding and design.
