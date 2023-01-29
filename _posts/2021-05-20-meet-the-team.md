@@ -24,7 +24,7 @@ An active Open Source contributor since he was 14, he is the visionary and lead 
 
 <img src="/assets/images/avatar_oszka.jpg" alt="drawing" width="200" />
 
-**Zuzanna Majer** with a background in antropology she brings a human approach to IT projects. Focuses on user needs and community building. Takes care of PR and communication.
+**Zuzanna Majer** with a background in anthropology, she brings a human approach to IT projects. Focuses on user needs and community building. Takes care of PR and communication.
 
 <img src="/assets/images/ali_avatar.jpeg" alt="drawing" width="200" />
 
