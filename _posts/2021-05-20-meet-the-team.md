@@ -11,7 +11,7 @@ tags :
 ---
 <img src="/assets/images/avatar_mathijs.jpg" alt="drawing" width="200" />
 
-**Mathijs de Bruin** the inventor, founder and maintainer of ipfs-search. He has extensive experience as a developer, data architecht, and entrepeneur. Founding member of the coop Visualspace, a web-solutions company. He graduated in physics and philosophy at the University of Amsterdam in 2010 where he won the New Ideas Contest in 2009.
+**Mathijs de Bruin** the inventor, founder and maintainer of ipfs-search. He has extensive experience as a developer, data architect, and entrepeneur. Founding member of the coop Visualspace, a web-solutions company. He graduated in physics and philosophy at the University of Amsterdam in 2010 where he won the New Ideas Contest in 2009.
 An active Open Source contributor since he was 14, he is the visionary and lead developer carrying the project forward.
 
 <img src="/assets/images/frido_avatar.jpg" alt="drawing" width="200" />
