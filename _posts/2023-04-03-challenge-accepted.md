@@ -19,13 +19,16 @@ Being passive on the internet means explosive growth will overwhelm you. Our suc
 
 This is the first part in a two-post blog miniseries, where we describe how indeed we managed to surpass our ambitions of handling 1000 requests per second.
 
-![Traffic growth over 2022.](/assets/images/2023-04-03-challenge-accepted/api_requests.png)
+<figure>
+  ![Traffic growth over 2022.](/assets/images/2023-04-03-challenge-accepted/api_requests.png)
+  <figcaption>Traffic growth over 2022.</figcaption>
+</figure>
 
-Traffic growth over 2022.
-
+<figure>
 ![Index growth over 2022.](/assets/images/2023-04-03-challenge-accepted/documents_per_index.png)
 
 Index growth over 2022.
+</figure>
 
 # It’s elastic, right?
 
@@ -37,9 +40,10 @@ Early benchmarks suggested that a single node was able to handle 10 queries per 
 
 As soon as we scaled our cluster from 4 up to 30 nodes, average response times shot up to over half a second! Mind you, these are averages — it implies that some of our users had to wait for several seconds for search results.
 
-![Response times over 2021.](/assets/images/2023-04-03-challenge-accepted/response_time.png)
-
-Response times over 2021.
+<figure>
+  ![Response times over 2021.](/assets/images/2023-04-03-challenge-accepted/response_time.png)
+  <figcaption>Response times over 2021.</figcaption>
+</figure>
 
 ## The Internet is impatient!
 
@@ -95,9 +99,10 @@ It turns out there was not a single factor which could be clearly outlined as th
 
 It did become clear though, as would be expected, that performing crawling in bulk and asynchronously was a major factor in getting our response times under control. And so in summer ‘22 it finally seemed we were ready to continue scaling, but…
 
-![A glimpse of one of the monitoring dashboards which we developed along the process.](/assets/images/2023-04-03-challenge-accepted/all_the_stats.png)
-
-A glimpse of one of the monitoring dashboards which we developed along the process.
+<figure>
+  ![A glimpse of one of the monitoring dashboards which we developed along the process.](/assets/images/2023-04-03-challenge-accepted/all_the_stats.png)
+  <figcaption>A glimpse of one of the monitoring dashboards which we developed along the process.</figcaption>
+</figure>
 
 # Our benchmark haven’t started yet!
 
