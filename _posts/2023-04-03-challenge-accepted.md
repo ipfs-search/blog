@@ -20,12 +20,12 @@ Being passive on the internet means explosive growth will overwhelm you. Our suc
 This is the first part in a two-post blog miniseries, where we describe how indeed we managed to surpass our ambitions of handling 1000 requests per second.
 
 <figure>
-  ![Traffic growth over 2022.](/assets/images/2023-04-03-challenge-accepted/api_requests.png)
+  <img alt="Traffic growth over 2022." src="/assets/images/2023-04-03-challenge-accepted/api_requests">
   <figcaption>Traffic growth over 2022.</figcaption>
 </figure>
 
 <figure>
-![Index growth over 2022.](/assets/images/2023-04-03-challenge-accepted/documents_per_index.png)
+![Index growth over 2022.](<img alt="" src="/assets/images/2023-04-03-challenge-accepted/documents_per_index">
 
 Index growth over 2022.
 </figure>
@@ -41,7 +41,7 @@ Early benchmarks suggested that a single node was able to handle 10 queries per 
 As soon as we scaled our cluster from 4 up to 30 nodes, average response times shot up to over half a second! Mind you, these are averages — it implies that some of our users had to wait for several seconds for search results.
 
 <figure>
-  ![Response times over 2021.](/assets/images/2023-04-03-challenge-accepted/response_time.png)
+  <img alt="Response times over 2021." src="/assets/images/2023-04-03-challenge-accepted/response_time">
   <figcaption>Response times over 2021.</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ Unlike visitors of your local library, users have strong expectations when it co
 
 Like any large and complex machine, Elastic/OpenSearch has a large number of configuration options which one can spend a lifetime tuning. Sadly enough, it seems that few experts in the field have bothered to share detailed knowledge. As soon as one leaves the ‘safe’ territory of the Proof of Concept, enter the domain of the Tech Consultant. Search being our core activity, this is potentially an endless sinkhole of funds, which we do not have in the first place!
 
-![Source: [https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/](https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/)](/assets/images/2023-04-03-challenge-accepted/Control-2-1200x766.jpg)
+![Source: [https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/](https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/)](<img alt="" src="/assets/images/2023-04-03-challenge-accepted/Control-2-1200x766.jpg)
 
 Source: [https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/](https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/)
 
@@ -100,7 +100,7 @@ It turns out there was not a single factor which could be clearly outlined as th
 It did become clear though, as would be expected, that performing crawling in bulk and asynchronously was a major factor in getting our response times under control. And so in summer ‘22 it finally seemed we were ready to continue scaling, but…
 
 <figure>
-  ![A glimpse of one of the monitoring dashboards which we developed along the process.](/assets/images/2023-04-03-challenge-accepted/all_the_stats.png)
+  <img alt="A glimpse of one of the monitoring dashboards which we developed along the process." src="/assets/images/2023-04-03-challenge-accepted/all_the_stats">
   <figcaption>A glimpse of one of the monitoring dashboards which we developed along the process.</figcaption>
 </figure>
 
