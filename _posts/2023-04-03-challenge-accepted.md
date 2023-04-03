@@ -20,14 +20,13 @@ Being passive on the internet means explosive growth will overwhelm you. Our suc
 This is the first part in a two-post blog miniseries, where we describe how indeed we managed to surpass our ambitions of handling 1000 requests per second.
 
 <figure>
-  <img alt="Traffic growth over 2022." src="/assets/images/2023-04-03-challenge-accepted/api_requests">
+  <img alt="Traffic growth over 2022." src="/assets/images/2023-04-03-challenge-accepted/api_requests.png">
   <figcaption>Traffic growth over 2022.</figcaption>
 </figure>
 
 <figure>
-![Index growth over 2022.](<img alt="" src="/assets/images/2023-04-03-challenge-accepted/documents_per_index">
-
-Index growth over 2022.
+  <img alt="Index growth over 2022." src="/assets/images/2023-04-03-challenge-accepted/documents_per_index.png">
+  <figcaption>Index growth over 2022.</figcaption>
 </figure>
 
 # It’s elastic, right?
@@ -41,7 +40,7 @@ Early benchmarks suggested that a single node was able to handle 10 queries per 
 As soon as we scaled our cluster from 4 up to 30 nodes, average response times shot up to over half a second! Mind you, these are averages — it implies that some of our users had to wait for several seconds for search results.
 
 <figure>
-  <img alt="Response times over 2021." src="/assets/images/2023-04-03-challenge-accepted/response_time">
+  <img alt="Response times over 2021." src="/assets/images/2023-04-03-challenge-accepted/response_time.png">
   <figcaption>Response times over 2021.</figcaption>
 </figure>
 
@@ -100,7 +99,7 @@ It turns out there was not a single factor which could be clearly outlined as th
 It did become clear though, as would be expected, that performing crawling in bulk and asynchronously was a major factor in getting our response times under control. And so in summer ‘22 it finally seemed we were ready to continue scaling, but…
 
 <figure>
-  <img alt="A glimpse of one of the monitoring dashboards which we developed along the process." src="/assets/images/2023-04-03-challenge-accepted/all_the_stats">
+  <img alt="A glimpse of one of the monitoring dashboards which we developed along the process." src="/assets/images/2023-04-03-challenge-accepted/all_the_stats.png">
   <figcaption>A glimpse of one of the monitoring dashboards which we developed along the process.</figcaption>
 </figure>
 
