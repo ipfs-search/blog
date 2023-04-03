@@ -2,10 +2,7 @@
 layout: single
 title:  "1000 hits/s? Challenge accepted!"
 author: Mathijs de Bruin
-excerpt: In fall 2021 we started the ambitious work of seeing whether
-	[ipfs-search.com](http://ipfs-search.com) could truly handle web-scale traffic. Through the
-	grapevine, we’d heard how a well known search engine might be interested in searching IPFS.
-	Searching IPFS is what we do since 2016, so we said “challenge: accepted”.
+excerpt: In fall 2021 we started the ambitious work of seeing whether [ipfs-search.com](http://ipfs-search.com) could truly handle web-scale traffic. Through the grapevine, we’d heard how a well known search engine might be interested in searching IPFS. Searching IPFS is what we do since 2016, so we said “challenge: accepted”.
 header:
   teaser: "/assets/images/2023-04-03-challenge-accepted/Control-2-1200x766.jpg"
   overlay_image: "/assets/images/2023-04-03-challenge-accepted/Control-2-1200x766.jpg"
