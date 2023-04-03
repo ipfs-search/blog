@@ -1,12 +1,16 @@
-# Blog: 1000 hits/s? Challenge accepted!
-
-Created: March 27, 2023 6:59 PM
-Created By: Mathijs
-Last Edited By: Mathijs
-Last Edited Time: April 3, 2023 9:50 AM
-Status: In Review
-Tags: Filecoin, blogpost
-Type: Blogpost
+---
+layout: single
+title:  "1000 hits/s? Challenge accepted!"
+author: Mathijs de Bruin
+excerpt: In fall 2021 we started the ambitious work of seeing whether
+	[ipfs-search.com](http://ipfs-search.com) could truly handle web-scale traffic. Through the
+	grapevine, we’d heard how a well known search engine might be interested in searching IPFS.
+	Searching IPFS is what we do since 2016, so we said “challenge: accepted”.
+header:
+  teaser: "/assets/images/2023-04-03-challenge-accepted/Control-2-1200x766.jpg"
+  overlay_image: "/assets/images/2023-04-03-challenge-accepted/Control-2-1200x766.jpg"
+  overlay_filter: rgba(0, 0, 0, 0.7)
+---
 
 # Introduction
 
@@ -18,11 +22,11 @@ Being passive on the internet means explosive growth will overwhelm you. Our suc
 
 This is the first part in a two-post blog miniseries, where we describe how indeed we managed to surpass our ambitions of handling 1000 requests per second.
 
-![Traffic growth over 2022.](/assets/images/2023-04-03-challenge-accepted/Untitled.png)
+![Traffic growth over 2022.](/assets/images/2023-04-03-challenge-accepted/api_requests.png)
 
 Traffic growth over 2022.
 
-![Index growth over 2022.](/assets/images/2023-04-03-challenge-accepted/Untitled%201.png)
+![Index growth over 2022.](/assets/images/2023-04-03-challenge-accepted/documents_per_index.png)
 
 Index growth over 2022.
 
@@ -36,7 +40,9 @@ Early benchmarks suggested that a single node was able to handle 10 queries per 
 
 As soon as we scaled our cluster from 4 up to 30 nodes, average response times shot up to over half a second! Mind you, these are averages — it implies that some of our users had to wait for several seconds for search results.
 
-![Untitled](/assets/images/2023-04-03-challenge-accepted/Untitled%202.png)
+![Response times over 2021.](/assets/images/2023-04-03-challenge-accepted/response_time.png)
+
+Response times over 2021.
 
 ## The Internet is impatient!
 
@@ -92,7 +98,7 @@ It turns out there was not a single factor which could be clearly outlined as th
 
 It did become clear though, as would be expected, that performing crawling in bulk and asynchronously was a major factor in getting our response times under control. And so in summer ‘22 it finally seemed we were ready to continue scaling, but…
 
-![A glimpse of one of the monitoring dashboards which we developed along the process.](/assets/images/2023-04-03-challenge-accepted/Untitled%203.png)
+![A glimpse of one of the monitoring dashboards which we developed along the process.](/assets/images/2023-04-03-challenge-accepted/all_the_stats.png)
 
 A glimpse of one of the monitoring dashboards which we developed along the process.
 
