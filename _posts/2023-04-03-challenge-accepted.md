@@ -107,6 +107,6 @@ It did become clear though, as would be expected, that performing crawling in bu
 
 Throughout the ‘minor’ delay and distraction of finally getting these darn response times under control, we went waaaay overboard creating extremely insightful monitoring dashboards. We implemented deep-reaching functionality in our crawler, of all components. 
 
-But we hadn’t yet managed to scale our cluster to beyond 33 nodes! Nor develop or run our actual benchmark! Want to learn how we achieved this?
+But we hadn’t yet managed to scale our cluster beyond 33 nodes! Nor develop or run our actual benchmark! Want to learn how we achieved this?
 
 Stay tuned for our next post!
