@@ -52,9 +52,10 @@ Unlike visitors of your local library, users have strong expectations when it co
 
 Like any large and complex machine, Elastic/OpenSearch has a large number of configuration options which one can spend a lifetime tuning. Sadly enough, it seems that few experts in the field have bothered to share detailed knowledge. As soon as one leaves the ‘safe’ territory of the Proof of Concept, enter the domain of the Tech Consultant. Search being our core activity, this is potentially an endless sinkhole of funds, which we do not have in the first place!
 
-![Source: [https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/](https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/)](<img alt="" src="/assets/images/2023-04-03-challenge-accepted/Control-2-1200x766.jpg)
-
-Source: [https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/](https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/)
+<figure>
+  <img alt="Control panel, knobs and dials." src="/assets/images/2023-04-03-challenge-accepted/Control-2-1200x766.jpg">
+  <figcaption>Source: <a href="https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/">https://flashbak.com/the-control-panel-archive-the-tactile-beauty-of-buttons-meters-knobs-and-dials-406888/</a></figcaption>
+</figure>
 
 Rather than Outsourcing All The Things, we ended up becoming the consultants ourselves. Which is one of the reasons it took us over a year to learn how to overcome these obstacles, with the end result being that we now have all the knowledge in-house. (We did get some help, but more towards the practical side of the implementation.)
 
