@@ -764,12 +764,12 @@ Our search engine getting incredibly faster, for one thing. We hit well over 130
 Soon(tm), because although our goal it has succeeded, QED and all, there is still a bit of cleanup to do!
 
 <figure>
-    <img alt="Requests per second shooting up like El Niño off the coast of Peru." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2018.png">
+    <img alt="Requests per second shooting up like El Niño off the coast of Peru." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2018.png" width="164">
     <figcaption>Requests per second shooting up like <a href="https://mobile.twitter.com/LeonSimons8/status/1646180075669209091">El Niño off the coast of Peru.</a></figcaption>
 </figure>
 
 <figure>
-    <img alt="Request durations dropping like the value of Bored Apes." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2019.png">
+    <img alt="Request durations dropping like the value of Bored Apes." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2019.png" width="116">
     <figcaption>Request durations dropping <a href="https://www.glossy.co/fashion/2022-was-the-year-of-the-nft-reality-check/">like the value of Bored Apes</a> after bored rich monkeys realized they paid for the proof of having paid for something.</figcaption>
 </figure>
 
