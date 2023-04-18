@@ -108,6 +108,7 @@ As soon as we had the tests set up, we started plugging in servers. Over the pas
 
 <figure>
     <img src="/assets/images/2023-04-18-searching-at-scale/Untitled%205.png">
+    <figcaption>Overview of all the (cold, with cleared frontend cache) benchmarks we've performed.</figcaption>
 </figure>
 
 However, as we added nodes and thus capacity, we observed not only that the number of requests per second did not go up, the actual peak duration skyrocketed!
@@ -208,20 +209,20 @@ Which adds up to the the following OpenSearch DSL query to get a list of fieldna
 
 ```json
 {
-    "query": {
-        "match_all": {}
-    },
-    "size": 0,
+  "query": {
+    "match_all": {}
+  },
+  "size": 0,
+  "aggs": {
     "aggs": {
-        "aggs": {
-            "scripted_metric": {
-                "init_script": "state.fields = new HashMap();",
-                "map_script": "void iterateHashMap(String prefix, HashMap input, HashMap output) {  for (entry in input.entrySet()) {    String fieldName = prefix + entry.getKey();    if (entry.getValue() instanceof Map) {      iterateHashMap(fieldName + '.', entry.getValue(), output);    } else {      if (output.containsKey(fieldName)) {        output[fieldName] += 1;      } else {        output[fieldName] = 1;      }    }  }}iterateHashMap('', params['_source'], state.fields);",
-                "combine_script": "state.fields",
-                "reduce_script": "HashMap output = new HashMap();for (fields in states) {  for (field in fields.entrySet()) {    String fieldName = field.getKey();    Integer count = field.getValue();    if (output.containsKey(fieldName)) {      output[fieldName] += count;    } else {      output[fieldName] = count;    }  }}return output;"
-            }
-        }
+      "scripted_metric": {
+        "init_script": "state.fields = new HashMap();",
+        "map_script": "void iterateHashMap(String prefix, HashMap input, HashMap output) {  for (entry in input.entrySet()) {    String fieldName = prefix + entry.getKey();    if (entry.getValue() instanceof Map) {      iterateHashMap(fieldName + '.', entry.getValue(), output);    } else {      if (output.containsKey(fieldName)) {        output[fieldName] += 1;      } else {        output[fieldName] = 1;      }    }  }}iterateHashMap('', params['_source'], state.fields);",
+        "combine_script": "state.fields",
+        "reduce_script": "HashMap output = new HashMap();for (fields in states) {  for (field in fields.entrySet()) {    String fieldName = field.getKey();    Integer count = field.getValue();    if (output.containsKey(fieldName)) {      output[fieldName] += count;    } else {      output[fieldName] = count;    }  }}return output;"
+      }
     }
+  }
 }
 ```
 
@@ -562,194 +563,62 @@ With the mapping and all our scripts snugly fit into an [ingest pipeline](https:
 
 ```json
 {
-    "source": {
-        "index": "ipfs_files_v9",
-        "query": {
-            "bool": {
-                "filter": {
-                    "range": {
-                        "first-seen": {
-                            "gte": 2023,
-                            "lt": 2024,
-                            "format": "yyyy"
-                        }
-                    }
-                },
-                "should": [
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "text/x-web-markdown*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "text/x-rst*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "text/x-log*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "text/x-asciidoc*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "text/troff*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "text/plain*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "text/html*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "message/rfc822*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "message/news*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "image/vnd.djvu*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/xhtml+xml*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/x-tika-ooxml*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/x-tika-msoffice*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/x-tex*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/x-mobipocket-ebook*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/x-fictionbook+xml*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/x-dvi*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/vnd.sun.xml.writer.global*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/vnd.openxmlformats-officedocument.presentationml.presentation*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/vnd.oasis.opendocument.text*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/vnd.ms-powerpoint*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/vnd.ms-htmlhelp*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/vnd.ms-excel*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/vnd.sun.xml.draw*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/rtf*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/postscript*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/pdf*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/msword5*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/msword2*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/msword*"
-                        }
-                    },
-                    {
-                        "wildcard": {
-                            "metadata.Content-Type": "application/epub+zip*"
-                        }
-                    }
-                ],
-                "minimum_should_match": 1
+  "source": {
+    "index": "ipfs_files_v9",
+    "query": {
+      "bool": {
+        "filter": {
+          "range": {
+            "first-seen": {
+              "gte": 2023,
+              "lt": 2024,
+              "format": "yyyy"
             }
-        }
-    },
-    "dest": {
-        "index": "{{ _.index }}",
-        "pipeline": "ipfs_files_cleanup_v11"
+          }
+        },
+        "should": [
+          { "wildcard": { "metadata.Content-Type": "text/x-web-markdown*" }},
+          { "wildcard": { "metadata.Content-Type": "text/x-rst*" }},
+          { "wildcard": { "metadata.Content-Type": "text/x-log*" }},
+          { "wildcard": { "metadata.Content-Type": "text/x-asciidoc*" }},
+          { "wildcard": { "metadata.Content-Type": "text/troff*" }},
+          { "wildcard": { "metadata.Content-Type": "text/plain*" }},
+          { "wildcard": { "metadata.Content-Type": "text/html*" }},
+          { "wildcard": { "metadata.Content-Type": "message/rfc822*" }},
+          { "wildcard": { "metadata.Content-Type": "message/news*" }},
+          { "wildcard": { "metadata.Content-Type": "image/vnd.djvu*" }},
+          { "wildcard": { "metadata.Content-Type": "application/xhtml+xml*" }},
+          { "wildcard": { "metadata.Content-Type": "application/x-tika-ooxml*" }},
+          { "wildcard": { "metadata.Content-Type": "application/x-tika-msoffice*" }},
+          { "wildcard": { "metadata.Content-Type": "application/x-tex*" }},
+          { "wildcard": { "metadata.Content-Type": "application/x-mobipocket-ebook*" }},
+          { "wildcard": { "metadata.Content-Type": "application/x-fictionbook+xml*" }},
+          { "wildcard": { "metadata.Content-Type": "application/x-dvi*" }},
+          { "wildcard": { "metadata.Content-Type": "application/vnd.sun.xml.writer.global*" }},
+          { "wildcard": { "metadata.Content-Type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document*" }},
+          { "wildcard": { "metadata.Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet*" }},
+          { "wildcard": { "metadata.Content-Type": "application/vnd.openxmlformats-officedocument.presentationml.presentation*" }},
+          { "wildcard": { "metadata.Content-Type": "application/vnd.oasis.opendocument.text*" }},
+          { "wildcard": { "metadata.Content-Type": "application/vnd.ms-powerpoint*" }},
+          { "wildcard": { "metadata.Content-Type": "application/vnd.ms-htmlhelp*" }},
+          { "wildcard": { "metadata.Content-Type": "application/vnd.ms-excel*" }},
+          { "wildcard": { "metadata.Content-Type": "application/vnd.sun.xml.draw*" }},
+          { "wildcard": { "metadata.Content-Type": "application/rtf*" }},
+          { "wildcard": { "metadata.Content-Type": "application/postscript*" }},
+          { "wildcard": { "metadata.Content-Type": "application/pdf*" }},
+          { "wildcard": { "metadata.Content-Type": "application/msword5*" }},
+          { "wildcard": { "metadata.Content-Type": "application/msword2*" }},
+          { "wildcard": { "metadata.Content-Type": "application/msword*" }},
+          { "wildcard": { "metadata.Content-Type": "application/epub+zip*" }}
+        ],
+        "minimum_should_match": 1
+      }
     }
+  },
+  "dest": {
+    "index": "{{ _.index }}",
+    "pipeline": "ipfs_files_cleanup_v11"
+  }
 }
 ```
 
