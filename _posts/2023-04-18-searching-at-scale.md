@@ -782,7 +782,9 @@ For one, we are not yet indexing new stuff until we’ve refactored our [crawler
 Bring it on! Users of the world, unite! Come, [seek with us](https://ipfs-search.com/) the Interplanetary Filesystem and thou shalt [find](https://ipfs-search.com/#/search/detail/video/QmPwRWz5mxvJDCk2d6MtXfZwYHPZqdDMoGHhkvsDN3o5Jh?q=gangnam&page=1&type=video&last_seen=Any)!
 
 <figure>
-    <img alt="We are ready!" src="/assets/images/2023-04-18-searching-at-scale/Untitled%2020.png">
+    <a href="https://ipfs-search.com/#/search/detail/video/QmPwRWz5mxvJDCk2d6MtXfZwYHPZqdDMoGHhkvsDN3o5Jh?q=gangnam&page=1&type=video&last_seen=Any">
+      <img alt="We are ready!" src="/assets/images/2023-04-18-searching-at-scale/Untitled%2020.png">
+    </a>
     <figcaption>
         <a href="https://ipfs-search.com/#/search/detail/video/QmPwRWz5mxvJDCk2d6MtXfZwYHPZqdDMoGHhkvsDN3o5Jh?q=gangnam&page=1&type=video&last_seen=Any">Yes!</a>
         (Please, don’t tell me that it buffers… There’s <a href="https://fiatjaf.com/d5031e5b.html">NOTHING WRONG WITH THE DHT</a>! Eh!? Eh??) Anyways, <a href="https://n0.computer/blog/a-new-direction-for-iroh/">Iroh</a> is here to fix it all. 👋🙏
