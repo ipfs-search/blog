@@ -13,8 +13,8 @@ header:
 In 2021 we set ourselves the ambition of being able to handle 1000 hits/s on our API endpoints. To demonstrate that we are ready to scale with IPFS and that we can handle large-scale integration as the first and only search and discovery platform within the IPFS ecosystem.
 
 <figure>
-	<img alt="Source: https://messari.io/report/state-of-filecoin-q4-2022" src="https://cdn.sanity.io/images/2bt0j8lu/production/e992bf46793e79d3a5bad6ade311cba1752b027d-1920x1080.png?w=900&fit=max&auto=format&dpr=3">
-	<figcaption>Source: <a href="https://messari.io/report/state-of-filecoin-q4-2022">https://messari.io/report/state-of-filecoin-q4-2022</a></figcaption>
+    <img alt="Source: https://messari.io/report/state-of-filecoin-q4-2022" src="https://cdn.sanity.io/images/2bt0j8lu/production/e992bf46793e79d3a5bad6ade311cba1752b027d-1920x1080.png?w=900&fit=max&auto=format&dpr=3">
+    <figcaption>Source: <a href="https://messari.io/report/state-of-filecoin-q4-2022">https://messari.io/report/state-of-filecoin-q4-2022</a></figcaption>
 </figure>
 
 This is the second post in a 2-post miniseries where we explain the challenges we faced scaling up, and how they were eventually overcome. In [the previous post](https://blog.ipfs-search.com/challenge-accepted/) we dealt mainly with low response times as we scaled our cluster to 33 nodes. We will now describe how we built a realistic benchmark. It details the problems which we faced scaling up to 73 nodes and how they were overcome by completely restructuring our indexes.
@@ -22,11 +22,11 @@ This is the second post in a 2-post miniseries where we explain the challenges w
 Finally, we can say that our platform can handle well over 1300 hits/s with <150ms for 95% of requests, equivalent to serving 3100 unique users.
 
 <figure>
-	<img src="/assets/images/2023-04-18-searching-at-scale/Untitled.png">
+    <img src="/assets/images/2023-04-18-searching-at-scale/Untitled.png">
 </figure>
 
 <figure>
-	<img src="/assets/images/2023-04-18-searching-at-scale/Untitled%201.png">
+    <img src="/assets/images/2023-04-18-searching-at-scale/Untitled%201.png">
 </figure>
 
 # Building a real-world benchmark
@@ -86,34 +86,28 @@ Having a short ASCII summary of a single test is cute, but that doesn’t tell u
 In order to do that, we got [k6 to write metrics to InfluxDB](https://k6.io/docs/results-output/real-time/influxdb-grafana/) and created a dashboard visualising the results in Grafana. Both of which we had set up prior to this scale out to investigate latency issues, as discussed in our [previous post](https://blog.ipfs-search.com/challenge-accepted/).
 
 <figure>
-	<img alt="Overview of our benchmarking dashboard." src="/assets/images/2023-04-18-searching-at-scale/Untitled%202.png">
-	<figcaption>Overview of our benchmarking dashboard.</figcaption>
+    <img alt="Overview of our benchmarking dashboard." src="/assets/images/2023-04-18-searching-at-scale/Untitled%202.png">
+    <figcaption>Overview of our benchmarking dashboard.</figcaption>
 </figure>
-
-Overview of our benchmarking dashboard.
 
 <figure>
-	<img alt="This is what it looks like when we hit peak capacity." src="/assets/images/2023-04-18-searching-at-scale/Untitled%203.png">
-	<figcaption>This is what it looks like when we hit peak capacity.</figcaption>
+    <img alt="This is what it looks like when we hit peak capacity." src="/assets/images/2023-04-18-searching-at-scale/Untitled%203.png">
+    <figcaption>This is what it looks like when we hit peak capacity.</figcaption>
 </figure>
-
-This is what it looks like when we hit peak capacity.
 
 <figure>
-	<img alt="It is often the maxing out of CPU on of 1 or 2 servers which casues the entire cluster to take increasingly longer lunches." src="/assets/images/2023-04-18-searching-at-scale/Untitled%204.png">
-	<figcaption>
-		It is often the maxing out of CPU on of 1 or 2 servers which casues the entire cluster to take <a href="https://hitchhikers.fandom.com/wiki/Lig_Lury_Jr">increasingly longer lunches</a>.
-	</figcaption>
+    <img alt="It is often the maxing out of CPU on of 1 or 2 servers which casues the entire cluster to take increasingly longer lunches." src="/assets/images/2023-04-18-searching-at-scale/Untitled%204.png">
+    <figcaption>
+        It is often the maxing out of CPU on of 1 or 2 servers which casues the entire cluster to take <a href="https://hitchhikers.fandom.com/wiki/Lig_Lury_Jr">increasingly longer lunches</a>.
+    </figcaption>
 </figure>
-
-It is often the maxing out of CPU on of 1 or 2 servers which casues the entire cluster to take [increasingly longer lunches](https://hitchhikers.fandom.com/wiki/Lig_Lury_Jr).
 
 # Not the scaling we expected
 
 As soon as we had the tests set up, we started plugging in servers. Over the past year we had been improving our [Ansible deployment stack](https://github.com/ipfs-search/ipfs-search-deployment/) to be able to fully automatically install, configure and setup [Hetzner bare metal](https://www.hetzner.com/dedicated-rootserver/matrix-ax) boxes, so we could deploy any number of nodes in about 30m.
 
 <figure>
-	<img src="/assets/images/2023-04-18-searching-at-scale/Untitled%205.png">
+    <img src="/assets/images/2023-04-18-searching-at-scale/Untitled%205.png">
 </figure>
 
 However, as we added nodes and thus capacity, we observed not only that the number of requests per second did not go up, the actual peak duration skyrocketed!
@@ -123,11 +117,9 @@ Specfically, with 33 nodes we were peaking around 700 RPS with a peak request du
 As you may notice from the screenshot, we tried any number of tweaking of settings, upgrading OpenSearch, tweaking our API and even reinstalling our servers. One key aspect which kept returning is that the same 5 or so nodes were handling about 10x the IOPS of the other nodes. It turned out that somehow the cluster decided that these 5 nodes (despite or perhaps due to our myriad of shards) were handling a much greater share of the traffic and were causing a bottleneck in our cluster.
 
 <figure>
-	<img alt="IOPS in progress for all of our nodes. This is an indicator of the degree to which IO exhaustion is a bottleneck, particularly on NVMe-based setups (like ours). Note how most nodes are not even mentioned here, few have ~10 IOPS in progress and then there’s a few with ~100 in progress." src="/assets/images/2023-04-18-searching-at-scale/Untitled%206.png">
-	<figcaption>IOPS in progress for all of our nodes. This is an indicator of the degree to which IO exhaustion is a bottleneck, particularly on NVMe-based setups (like ours). Note how most nodes are not even mentioned here, few have ~10 IOPS in progress and then there’s a few with ~100 in progress.</figcaption>
+    <img alt="IOPS in progress for all of our nodes. This is an indicator of the degree to which IO exhaustion is a bottleneck, particularly on NVMe-based setups (like ours). Note how most nodes are not even mentioned here, few have ~10 IOPS in progress and then there’s a few with ~100 in progress." src="/assets/images/2023-04-18-searching-at-scale/Untitled%206.png">
+    <figcaption>IOPS in progress for all of our nodes. This is an indicator of the degree to which IO exhaustion is a bottleneck, particularly on NVMe-based setups (like ours). Note how most nodes are not even mentioned here, few have ~10 IOPS in progress and then there’s a few with ~100 in progress.</figcaption>
 </figure>
-
-IOPS in progress for all of our nodes. This is an indicator of the degree to which IO exhaustion is a bottleneck, particularly on NVMe-based setups (like ours). Note how most nodes are not even mentioned here, few have ~10 IOPS in progress and then there’s a few with ~100 in progress.
 
 By this time, we had been trying for well over a year to meet our 1000 hit/s benchmark. By now, we really expected to have met the mark, simply by plugging in more servers. Yet, we were forced to acknowledge that a much deeper overhaul was necessary.
 
@@ -159,11 +151,9 @@ We were certain that having 4 huge indexes (files, directories, invalids and par
 And not just that… how exactly are we going to group our documents? Documents, audio, images, videos, directories and ‘other’, like we have in our [frontend](https://ipfs-search.com/)? But what, on Earth’s name is the definition of a ‘document’!?
 
 <figure>
-	<img alt="List of categories in our frontend." src="/assets/images/2023-04-18-searching-at-scale/Untitled%207.png">
-	<figcaption>List of categories in our frontend.</figcaption>
+    <img alt="List of categories in our frontend." src="/assets/images/2023-04-18-searching-at-scale/Untitled%207.png">
+    <figcaption>List of categories in our frontend.</figcaption>
 </figure>
-
-List of categories in our frontend.
 
 In order to make informed decisions about this, we decided to query our dataset for statistics, based on our ‘working’ definition of content types from the frontend. How many items of each category did we have? What sort of fields were present for various types and categories?
 
@@ -218,45 +208,39 @@ Which adds up to the the following OpenSearch DSL query to get a list of fieldna
 
 ```json
 {
-  "query": {
-    "match_all": {}
-  },
-	"size": 0,
-  "aggs": {
+    "query": {
+        "match_all": {}
+    },
+    "size": 0,
     "aggs": {
-				"scripted_metric": {
-						"init_script": "state.fields = new HashMap();",
-						"map_script": "void iterateHashMap(String prefix, HashMap input, HashMap output) {  for (entry in input.entrySet()) {    String fieldName = prefix + entry.getKey();    if (entry.getValue() instanceof Map) {      iterateHashMap(fieldName + '.', entry.getValue(), output);    } else {      if (output.containsKey(fieldName)) {        output[fieldName] += 1;      } else {        output[fieldName] = 1;      }    }  }}iterateHashMap('', params['_source'], state.fields);",
-						"combine_script": "state.fields",
-						"reduce_script": "HashMap output = new HashMap();for (fields in states) {  for (field in fields.entrySet()) {    String fieldName = field.getKey();    Integer count = field.getValue();    if (output.containsKey(fieldName)) {      output[fieldName] += count;    } else {      output[fieldName] = count;    }  }}return output;"
-				}
-		}
-  }
+        "aggs": {
+            "scripted_metric": {
+                "init_script": "state.fields = new HashMap();",
+                "map_script": "void iterateHashMap(String prefix, HashMap input, HashMap output) {  for (entry in input.entrySet()) {    String fieldName = prefix + entry.getKey();    if (entry.getValue() instanceof Map) {      iterateHashMap(fieldName + '.', entry.getValue(), output);    } else {      if (output.containsKey(fieldName)) {        output[fieldName] += 1;      } else {        output[fieldName] = 1;      }    }  }}iterateHashMap('', params['_source'], state.fields);",
+                "combine_script": "state.fields",
+                "reduce_script": "HashMap output = new HashMap();for (fields in states) {  for (field in fields.entrySet()) {    String fieldName = field.getKey();    Integer count = field.getValue();    if (output.containsKey(fieldName)) {      output[fieldName] += count;    } else {      output[fieldName] = count;    }  }}return output;"
+            }
+        }
+    }
 }
 ```
 
 The result was a staggering amount of information, which we proceeded to sort out. We categorised each and every field: should it be copied, removed if it’s a duplicate, or simply not be indexed at all?
 
 <figure>
-	<img alt="Field statistics per type." src="/assets/images/2023-04-18-searching-at-scale/Untitled%208.png">
-	<figcaption>Field statistics per type. <a href="https://github.com/ipfs-search/ipfs-search/blob/mapping_v10/docs/indices/sharding/content-types.pdf">Full dataset</a>.</figcaption>
+    <img alt="Field statistics per type." src="/assets/images/2023-04-18-searching-at-scale/Untitled%208.png">
+    <figcaption>Field statistics per type. <a href="https://github.com/ipfs-search/ipfs-search/blob/mapping_v10/docs/indices/sharding/content-types.pdf">Full dataset</a>.</figcaption>
 </figure>
-
-Field statistics per type. [Full dataset](https://github.com/ipfs-search/ipfs-search/blob/mapping_v10/docs/indices/sharding/content-types.pdf).
 
 <figure>
-	<img alt="Document count per data type." src="/assets/images/2023-04-18-searching-at-scale/Untitled%209.png">
-	<figcaption>Document count per data type. <a href="https://github.com/ipfs-search/ipfs-search/blob/mapping_v10/docs/indices/sharding/content-types.pdf">Full dataset</a>.</figcaption>
+    <img alt="Document count per data type." src="/assets/images/2023-04-18-searching-at-scale/Untitled%209.png">
+    <figcaption>Document count per data type. <a href="https://github.com/ipfs-search/ipfs-search/blob/mapping_v10/docs/indices/sharding/content-types.pdf">Full dataset</a>.</figcaption>
 </figure>
-
-Document count per data type. [Full dataset.](https://github.com/ipfs-search/ipfs-search/blob/mapping_v10/docs/indices/sharding/content-types.pdf)
 
 <figure>
-	<img alt="Mime types in our index." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2010.png">
-	<figcaption>Mime types in our index. <a href="https://github.com/ipfs-search/ipfs-search/blob/mapping_v10/docs/indices/sharding/content-types.pdf">Full dataset</a>.</figcaption>
+    <img alt="Mime types in our index." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2010.png">
+    <figcaption>Mime types in our index. <a href="https://github.com/ipfs-search/ipfs-search/blob/mapping_v10/docs/indices/sharding/content-types.pdf">Full dataset</a>.</figcaption>
 </figure>
-
-Mime types in our index. [Full dataset.](https://github.com/ipfs-search/ipfs-search/blob/mapping_v10/docs/indices/sharding/content-types.pdf)
 
 ### Mapping All the Things
 
@@ -499,11 +483,9 @@ At this time we merely split out the links to optimise search performance (chuck
 ***We have a graph of links on IPFS going back to 2019!***
 
 <figure>
-	<img alt="I couldn’t help but exploring a little bit what (a tiny fraction of) IPFS’ content graph looks like." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2011.png">
-	<figcaption>I couldn’t help but exploring a little bit what (a tiny fraction of) IPFS’ content graph looks like.</figcaption>
+    <img alt="I couldn’t help but exploring a little bit what (a tiny fraction of) IPFS’ content graph looks like." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2011.png">
+    <figcaption>I couldn’t help but exploring a little bit what (a tiny fraction of) IPFS’ content graph looks like.</figcaption>
 </figure>
-
-I couldn’t help but exploring a little bit what (a tiny fraction of) IPFS’ content graph looks like.
 
 ### Deduplicating fields
 
@@ -532,14 +514,14 @@ void harmonizeField(HashMap ctx, String srcFieldName, String dstFieldName) {
 
 String nestedKey = 'metadata';
 Map remapFields = [
-		...
+        ...
     'w:comments': 'w:Comments',
     'comment': 'w:Comments',
     'Comments': 'w:Comments',
     'JPEG Comment': 'w:Comments',
     'Exif SubIFD:User Comment': 'w:Comments',
     'User Comment': 'w:Comments',
-		...
+        ...
 ];
 
 if (!ctx.containsKey(nestedKey)) return;
@@ -580,62 +562,194 @@ With the mapping and all our scripts snugly fit into an [ingest pipeline](https:
 
 ```json
 {
-  "source": {
-    "index": "ipfs_files_v9",
-		"query": {
-			"bool": {
-				"filter": {
-					"range": {
-						"first-seen": {
-							"gte": 2023,
-							"lt": 2024,
-							"format": "yyyy"
-						}
-					}
-				},
-				"should": [
-					{"wildcard": {"metadata.Content-Type": "text/x-web-markdown*"}},
-					{"wildcard": {"metadata.Content-Type": "text/x-rst*"}},
-					{"wildcard": {"metadata.Content-Type": "text/x-log*"}},
-					{"wildcard": {"metadata.Content-Type": "text/x-asciidoc*"}},
-					{"wildcard": {"metadata.Content-Type": "text/troff*"}},
-					{"wildcard": {"metadata.Content-Type": "text/plain*"}},
-					{"wildcard": {"metadata.Content-Type": "text/html*"}},
-					{"wildcard": {"metadata.Content-Type": "message/rfc822*"}},
-					{"wildcard": {"metadata.Content-Type": "message/news*"}},
-					{"wildcard": {"metadata.Content-Type": "image/vnd.djvu*"}},
-					{"wildcard": {"metadata.Content-Type": "application/xhtml+xml*"}},
-					{"wildcard": {"metadata.Content-Type": "application/x-tika-ooxml*"}},
-					{"wildcard": {"metadata.Content-Type": "application/x-tika-msoffice*"}},
-					{"wildcard": {"metadata.Content-Type": "application/x-tex*"}},
-					{"wildcard": {"metadata.Content-Type": "application/x-mobipocket-ebook*"}},
-					{"wildcard": {"metadata.Content-Type": "application/x-fictionbook+xml*"}},
-					{"wildcard": {"metadata.Content-Type": "application/x-dvi*"}},
-					{"wildcard": {"metadata.Content-Type": "application/vnd.sun.xml.writer.global*"}},
-					{"wildcard": {"metadata.Content-Type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document*"}},
-					{"wildcard": {"metadata.Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet*"}},
-					{"wildcard": {"metadata.Content-Type": "application/vnd.openxmlformats-officedocument.presentationml.presentation*"}},
-					{"wildcard": {"metadata.Content-Type": "application/vnd.oasis.opendocument.text*"}},
-					{"wildcard": {"metadata.Content-Type": "application/vnd.ms-powerpoint*"}},
-					{"wildcard": {"metadata.Content-Type": "application/vnd.ms-htmlhelp*"}},
-					{"wildcard": {"metadata.Content-Type": "application/vnd.ms-excel*"}},
-					{"wildcard": {"metadata.Content-Type": "application/vnd.sun.xml.draw*"}},
-					{"wildcard": {"metadata.Content-Type": "application/rtf*"}},
-					{"wildcard": {"metadata.Content-Type": "application/postscript*"}},
-					{"wildcard": {"metadata.Content-Type": "application/pdf*"}},
-					{"wildcard": {"metadata.Content-Type": "application/msword5*"}},
-					{"wildcard": {"metadata.Content-Type": "application/msword2*"}},
-					{"wildcard": {"metadata.Content-Type": "application/msword*"}},
-					{"wildcard": {"metadata.Content-Type": "application/epub+zip*"}}
-				],
-				"minimum_should_match" : 1
-			}
-		}
-	},
-  "dest": {
-    "index": "{{ _.index }}",
-		"pipeline": "ipfs_files_cleanup_v11"
-  }
+    "source": {
+        "index": "ipfs_files_v9",
+        "query": {
+            "bool": {
+                "filter": {
+                    "range": {
+                        "first-seen": {
+                            "gte": 2023,
+                            "lt": 2024,
+                            "format": "yyyy"
+                        }
+                    }
+                },
+                "should": [
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "text/x-web-markdown*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "text/x-rst*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "text/x-log*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "text/x-asciidoc*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "text/troff*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "text/plain*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "text/html*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "message/rfc822*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "message/news*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "image/vnd.djvu*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/xhtml+xml*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/x-tika-ooxml*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/x-tika-msoffice*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/x-tex*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/x-mobipocket-ebook*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/x-fictionbook+xml*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/x-dvi*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/vnd.sun.xml.writer.global*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/vnd.openxmlformats-officedocument.presentationml.presentation*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/vnd.oasis.opendocument.text*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/vnd.ms-powerpoint*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/vnd.ms-htmlhelp*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/vnd.ms-excel*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/vnd.sun.xml.draw*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/rtf*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/postscript*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/pdf*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/msword5*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/msword2*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/msword*"
+                        }
+                    },
+                    {
+                        "wildcard": {
+                            "metadata.Content-Type": "application/epub+zip*"
+                        }
+                    }
+                ],
+                "minimum_should_match": 1
+            }
+        }
+    },
+    "dest": {
+        "index": "{{ _.index }}",
+        "pipeline": "ipfs_files_cleanup_v11"
+    }
 }
 ```
 
@@ -644,7 +758,7 @@ With the mapping and all our scripts snugly fit into an [ingest pipeline](https:
 This in and by itself was already a bit of a tedious process, but then we started having stability issues and operations started to unpredictably crash. With over 300 million documents to re-index (the others being invalids and partials, not requiring re-indexing) we couldn’t risk losing all of our progress so, as you see, we started indexing documents by year.
 
 <figure>
-	<img src="/assets/images/2023-04-18-searching-at-scale/Untitled%2012.png">
+    <img src="/assets/images/2023-04-18-searching-at-scale/Untitled%2012.png">
 </figure>
 
 ### 10 documents at a time
@@ -662,7 +776,7 @@ We got these weird and uncommon exceptions from OpenSearch, telling us there wer
 It turned out that not OpenSearch. Not [Kubo](https://github.com/ipfs/kubo). Not our crawler but… [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/), Influx’ metrics collecting daemon, was eating our file descriptors. And not just in any way, it was doing so tediously slowly, adding 1 FD per second, creating a problem which was so slow to emerge that it took months to manifest.
 
 <figure>
-	<img src="/assets/images/2023-04-18-searching-at-scale/Untitled%2013.png">
+    <img src="/assets/images/2023-04-18-searching-at-scale/Untitled%2013.png">
 </figure>
 
 Once it was discovered that Telegraf was the culprit though, it was easy enough to identify the [malignant code](https://github.com/ipfs-search/ipfs-search-deployment/commit/3cf83e30914e700d0e946922c04126f8f0fbd1e5#diff-6baffab2b19ba2a37c98f89821efdd34eff3117990b639d749e98fc2d18a8144R5279), a plugin logging ethernet statistics to attempt to diagnose the scaling behaviour discussed prior in this post (in order to exclude ethernet ring buffer overflows).
@@ -672,7 +786,7 @@ Once it was discovered that Telegraf was the culprit though, it was easy enough 
 Being good FOSS citizens, an [issue](https://github.com/influxdata/telegraf/issues/12813) was created on Influx’ Telegraf repo which was *reviewed that same day*. Only to find that the next day they already had a PR ready, complete with an artifact allowing us to verify that the issue was indeed resolved. Within 6 days Influx released an updated version.
 
 <figure>
-	<img src="/assets/images/2023-04-18-searching-at-scale/Untitled%2014.png">
+    <img src="/assets/images/2023-04-18-searching-at-scale/Untitled%2014.png">
 </figure>
 
 This is incredible! We ❤️ 💚 💙 💖 Open Source! And… great work [InfluxDB](https://www.influxdata.com/), you got good things going on! 👀
@@ -694,18 +808,16 @@ After which we set up replication and waited another half a day for the cluster 
 But wait… we just went from searching 2 indexes (files and directories) to searching 9 of them! However we approach this, it means a profound change to the way our queries function. How are we going to integrate that into our [vanilla JS API server](https://github.com/ipfs-search/ipfs-search-api/tree/master/server), most of which has not been touched in a year? Particularly, how are we going to make sure that we’re not missing out on relevant search results just because we made a silly typo?
 
 <figure>
-	<img alt="We can only abuse a memo so many times without giving some credit…" src="/assets/images/2023-04-18-searching-at-scale/Untitled%2015.png">
-	<figcaption>We can only abuse a memo so many times without giving some credit…</figcaption>
+    <img alt="We can only abuse a memo so many times without giving some credit…" src="/assets/images/2023-04-18-searching-at-scale/Untitled%2015.png">
+    <figcaption>We can only abuse a memo so many times without giving some credit…</figcaption>
 </figure>
-
-We can only abuse a memo so many times without giving some credit…
 
 ## Typing All the Things!
 
 Our solution was to Rewrite it in ~~Rust~~ TypeScript. Simply put, we have a lot of literals, there is a lot of code to rewrite/migrate — our API server really hasn’t gotten the love it deserves, pending a full rewrite like this. Type inference in this case allows us to do abstract reasoning over types such that if our code isn’t right, it simply won’t compile.
 
 <figure>
-	<img src="/assets/images/2023-04-18-searching-at-scale/Untitled%2016.png">
+    <img src="/assets/images/2023-04-18-searching-at-scale/Untitled%2016.png">
 </figure>
 
 For example, in the API server we’ve created types for:
@@ -742,11 +854,9 @@ As a bonus of this great rewrite, users will soon have access to a `subtype` fie
 Like all the fashionable kids (and some of our [Goliath competitors](https://research.google/pubs/pub45424/)) these days, we decided to rock with a proper monorepo with our client, our server and types as separate packages bundled snuggly together. To orchestrate it all, we opted for [Lerna](https://lerna.js.org/), the now-not-so-hip anymore wrapper around the increasingly hyped [Nx](https://nx.dev/) build system.
 
 <figure>
-	<img alt="This guy’s using Lerna. He’s hip." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2017.png">
-	<figcaption>This guy’s using Lerna. He’s hip. (Shamelessly gleaned from <a href="http://www.slidedeck.io/Swiip/industrial-javascript">Matthieu Lux’s presentation</a>.)</figcaption>
+    <img alt="This guy’s using Lerna. He’s hip." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2017.png">
+    <figcaption>This guy’s using Lerna. He’s hip. (Shamelessly gleaned from <a href="http://www.slidedeck.io/Swiip/industrial-javascript">Matthieu Lux’s presentation</a>.)</figcaption>
 </figure>
-
-This guy’s using Lerna. He’s hip. (Shamelessly gleaned from [Matthieu Lux’s presentation](http://www.slidedeck.io/Swiip/industrial-javascript).)
 
 This not only allowed us street cred’ and swag around places where espresso is served so fashionably bitter it turns your cheeks concave, it *also* allows us to:
 
@@ -762,8 +872,8 @@ Now, we can do all the things Perl people were doing in the 90’s. Except, with
 Anyways, as with all our stuff, the [Source is Out There](https://github.com/ipfs-search/ipfs-search-api/tree/rewrite)(tm) and soon, arguably, merged to main and published to NPM (which is not at all like [CPAN](https://www.cpan.org/) and *definitely* not as well designed!).
 
 <figure>
-	<img alt="Larry Wall" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Larry_Wall_YAPC_2007.jpg">
-	<figcaption><a href="https://en.wikipedia.org/wiki/Larry_Wall">Larry Wall</a> was the Original Hipster.</figcaption>
+    <img alt="Larry Wall" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Larry_Wall_YAPC_2007.jpg">
+    <figcaption><a href="https://en.wikipedia.org/wiki/Larry_Wall">Larry Wall</a> was the Original Hipster.</figcaption>
 </figure>
 
 ## Ready for testing!
@@ -785,16 +895,14 @@ Our search engine getting incredibly faster, for one thing. We hit well over 130
 Soon(tm), because although our goal it has succeeded, QED and all, there is still a bit of cleanup to do!
 
 <figure>
-	<img alt="Requests per second shooting up like El Niño off the coast of Peru." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2018.png">
-	<figcaption>Requests per second shooting up like <a href="https://mobile.twitter.com/LeonSimons8/status/1646180075669209091">[El Niño off the coast of Peru.</figcaption>
+    <img alt="Requests per second shooting up like El Niño off the coast of Peru." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2018.png">
+    <figcaption>Requests per second shooting up like <a href="https://mobile.twitter.com/LeonSimons8/status/1646180075669209091">El Niño off the coast of Peru.</a></figcaption>
 </figure>
 
 <figure>
-	<img alt="Request durations dropping like the value of Bored Apes." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2019.png">
-	<figcaption>Request durations dropping <a href="https://www.glossy.co/fashion/2022-was-the-year-of-the-nft-reality-check/">like the value of Bored Apes</a> after bored rich monkeys realized they paid for the proof of having paid for something.</figcaption>
+    <img alt="Request durations dropping like the value of Bored Apes." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2019.png">
+    <figcaption>Request durations dropping <a href="https://www.glossy.co/fashion/2022-was-the-year-of-the-nft-reality-check/">like the value of Bored Apes</a> after bored rich monkeys realized they paid for the proof of having paid for something.</figcaption>
 </figure>
-
-Request durations dropping [like the rate of Bored Apes](https://www.glossy.co/fashion/2022-was-the-year-of-the-nft-reality-check/) after bored rich monkeys realized they paid for the proof of having paid for something.
 
 ## Wrapping things up
 
@@ -805,11 +913,9 @@ For one, we are not yet indexing new stuff until we’ve refactored our [crawler
 Bring it on! Users of the world, unite! Come, [seek with us](https://ipfs-search.com/) the Interplanetary Filesystem and thou shalt [find](https://ipfs-search.com/#/search/detail/video/QmPwRWz5mxvJDCk2d6MtXfZwYHPZqdDMoGHhkvsDN3o5Jh?q=gangnam&page=1&type=video&last_seen=Any)!
 
 <figure>
-	<img alt="We are ready!" src="/assets/images/2023-04-18-searching-at-scale/Untitled%2020.png">
-	<figcaption>
-		<a href="https://ipfs-search.com/#/search/detail/video/QmPwRWz5mxvJDCk2d6MtXfZwYHPZqdDMoGHhkvsDN3o5Jh?q=gangnam&page=1&type=video&last_seen=Any">Yes!</a>
-		(Please, don’t tell me that it buffers… There’s <a href="https://fiatjaf.com/d5031e5b.html">NOTHING WRONG WITH THE DHT</a>! Eh!? Eh??) Anyways, <a href="https://n0.computer/blog/a-new-direction-for-iroh/">Iroh</a> is here to fix it all. 👋🙏
-	</figcaption>
+    <img alt="We are ready!" src="/assets/images/2023-04-18-searching-at-scale/Untitled%2020.png">
+    <figcaption>
+        <a href="https://ipfs-search.com/#/search/detail/video/QmPwRWz5mxvJDCk2d6MtXfZwYHPZqdDMoGHhkvsDN3o5Jh?q=gangnam&page=1&type=video&last_seen=Any">Yes!</a>
+        (Please, don’t tell me that it buffers… There’s <a href="https://fiatjaf.com/d5031e5b.html">NOTHING WRONG WITH THE DHT</a>! Eh!? Eh??) Anyways, <a href="https://n0.computer/blog/a-new-direction-for-iroh/">Iroh</a> is here to fix it all. 👋🙏
+    </figcaption>
 </figure>
-
-[Yes!](https://ipfs-search.com/#/search/detail/video/QmPwRWz5mxvJDCk2d6MtXfZwYHPZqdDMoGHhkvsDN3o5Jh?q=gangnam&page=1&type=video&last_seen=Any) (Please, don’t tell me that it buffers… There’s [NOTHING WRONG WITH THE DHT](https://fiatjaf.com/d5031e5b.html)! Eh!? Eh??) Anyways, [Iroh](https://n0.computer/blog/a-new-direction-for-iroh/) is here to fix it all. 👋🙏
