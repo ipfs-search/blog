@@ -763,15 +763,17 @@ Our search engine getting incredibly faster, for one thing. We hit well over 130
 
 Soon(tm), because although our goal it has succeeded, QED and all, there is still a bit of cleanup to do!
 
-<figure>
-    <img alt="Requests per second shooting up like El Niño off the coast of Peru." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2018.png" width="164" style="width: 164px;">
-    <figcaption>Requests per second shooting up like <a href="https://mobile.twitter.com/LeonSimons8/status/1646180075669209091">El Niño off the coast of Peru.</a></figcaption>
-</figure>
+<div> <!-- container, to prevent image floating left or right from text -->
+  <figure style="width: 30vb; float: left; text-align: center;">
+      <img alt="Requests per second shooting up like El Niño off the coast of Peru." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2018.png" width="164" style="width: 164px;">
+      <figcaption>Requests per second shooting up like <a href="https://mobile.twitter.com/LeonSimons8/status/1646180075669209091">El Niño off the coast of Peru.</a></figcaption>
+  </figure>
 
-<figure>
-    <img alt="Request durations dropping like the value of Bored Apes." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2019.png" width="116" style="width: 116px;">
-    <figcaption>Request durations dropping <a href="https://www.glossy.co/fashion/2022-was-the-year-of-the-nft-reality-check/">like the value of Bored Apes</a> after bored rich monkeys realized they paid for the proof of having paid for something.</figcaption>
-</figure>
+  <figure style="width: 30vb; float: right; text-align: center;">
+      <img alt="Request durations dropping like the value of Bored Apes." src="/assets/images/2023-04-18-searching-at-scale/Untitled%2019.png" width="116" style="width: 116px;">
+      <figcaption>Request durations dropping <a href="https://www.glossy.co/fashion/2022-was-the-year-of-the-nft-reality-check/">like the value of Bored Apes</a> after bored rich monkeys realized they paid for the proof of having paid for something.</figcaption>
+  </figure>
+</div>
 
 ## Wrapping things up
 
