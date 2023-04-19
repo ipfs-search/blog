@@ -110,4 +110,4 @@ Throughout the ‘minor’ delay and distraction of finally getting these darn r
 
 But we hadn’t yet managed to scale our cluster beyond 33 nodes! Nor develop or run our actual benchmark! Want to learn how we achieved this?
 
-Stay tuned for our next post!
+Continue reading [our second post](https://blog.ipfs-search.com/searching-at-scale/).
