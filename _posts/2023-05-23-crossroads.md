@@ -15,7 +15,7 @@ Since 2016, we at [ipfs-search.com](http://ipfs-search.com/) have been committed
 
 <figure>
     <img alt="Crossroads" src="/assets/images/2023-05-23-crossroads/crossroads.jpg">
-    <figcaption>Standing at the crossroads, ready to forge a path forward. <a href="https://www.flickr.com/photos/laenulfean/5943132296">CC BY-SA 2.0 Carsten Tolkmit</a></figcaption>
+    <figcaption>Standing at the crossroads, ready to forge a path forward. CC BY-SA 2.0 <a href="https://www.flickr.com/photos/laenulfean/5943132296">Carsten Tolkmit</a></figcaption>
 </figure>
 
 # Our Journey and Impact
@@ -24,7 +24,7 @@ Our story began in 2016, as a hobby project with a vision for a more decentraliz
 
 As pioneers in this space, we committed to creating a search engine rooted in principles of privacy, neutrality, and transparency – ideals often overlooked by traditional search engines. Our aim has always been to make information accessible to all, unbiased, and free from the control of any single entity.
 
-Throughout the years, we've had the pleasure of receiving support from various sources. We received backing from the EU commission's NGI0 Search and Discovery fund through NLNet Foundation, an organization dedicated to promoting a networked world, unrestricted by commercial or political monopolies. We also had to face difficult times, including a previous shutdown, after which Aad from RedPencil.io graciously stepped up and offered to support our hosting temporarily.
+Throughout the years, we've had the pleasure of receiving support from various sources. We received backing from the EU commission's [NGI0 Search and Discovery fund](https://nlnet.nl/discovery/) through [NLNet Foundation](https://nlnet.nl/), an organization dedicated to promoting a networked world, unrestricted by commercial or political monopolies. We also had to face difficult times, including a previous shutdown, after which Aad from [redpencil.io](https://redpencil.io/) graciously stepped up and offered to support our hosting temporarily.
 
 This support enabled us to evolve from a single server to a proper cluster, enhancing our service. However, as our infrastructure grew, so did the associated costs. Operating costs have become prohibitive for our small initiative, despite our significant personal investments and dedication to this cause. The financial commitment required for maintaining our services has been coupled with our personal financial needs, exacerbated by the onset of the crypto winter and a wider economic downturn.
 
@@ -36,11 +36,21 @@ We've proudly fostered a more open and inclusive digital world through our open-
 
 Without additional funding, we will need to shut down our public APIs in the coming weeks. Site search is already suspended, but API access remains—for now. This is a consequence of the balancing act between our commitment to the mission and the stark reality of operational costs and personal sustenance needs.
 
+<figure>
+    <img alt="Screenshot of our frontend being shutdown, with a banner instead of search." src="/assets/images/2023-05-23-crossroads/screenshot.png">
+    <figcaption>Site search is already suspended, but API access remains—for now.</figcaption>
+</figure>
+
 # The Road Ahead
 
 However, we view this not as the end of our journey, but as a challenging bend in the road. Our vision of a truly democratized internet, where information is accessible to all and uninfluenced by political or commercial interests, remains strong. We're actively looking for solutions, seeking new funding sources, and exploring every possible avenue to continue our mission.
 
 We need your help to navigate this. If you believe in what we do, please [share](https://twitter.com/intent/tweet?text=%F0%9F%9A%A8URGENT%3A%20ipfs-search.com%2C%20trusted%20%23Web3%20search%20since%202016%2C%20is%20down%20due%20to%20financial%20challenges.%20Help%20safeguard%20the%20future%20of%20open%2C%20unbiased%20search%20for%20%23IPFS.%20Spread%20the%20word%20%26%20show%20your%20support%20at%20https%3A%2F%2Fopencollective.com%2Fipfs-search%20%23SaveIPFSSearch%20) our situation within your community and consider supporting us directly through [OpenCollective](https://opencollective.com/ipfs-search).
+
+<figure>
+    <img alt="Misty view of curvy mountain road." src="/assets/images/2023-05-23-crossroads/misty-future.jpg">
+    <figcaption>We view this as a challenging bend in the road.</figcaption>
+</figure>
 
 # Stay in Touch
 
