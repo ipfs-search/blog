@@ -60,7 +60,7 @@ Thank you for your understanding and unwavering support.
 
 Sincerely,
 
-The [ipfs-search.com](http://ipfs-search.com/) Team<br>
-Mathijs de Bruin<br>
-Frido Emans<br>
+The [ipfs-search.com](http://ipfs-search.com/) Team
+Mathijs de Bruin
+Frido Emans
 Aad Versteeden
