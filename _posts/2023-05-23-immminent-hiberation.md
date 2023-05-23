@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "The Crossroads: IPFS-Search.com's Fight for Survival"
+title:  "The Crossroads: ipfs-search.com's Fight for Survival"
 author: Mathijs de Bruin
 excerpt: "In this critical update, we explain the urgent financial challenges facing ipfs-search.com, our response to these issues, and the steps we're taking to continue our mission. We detail our journey since 2016 and the crucial role we play in the Web3 and IPFS ecosystem."
 header:
