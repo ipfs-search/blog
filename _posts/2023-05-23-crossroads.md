@@ -63,4 +63,4 @@ Sincerely,
 The [ipfs-search.com](http://ipfs-search.com/) Team
 Mathijs de Bruin
 Frido Emans
-Aad Versteeden
+Aad Versteden
