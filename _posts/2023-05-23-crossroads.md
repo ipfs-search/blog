@@ -37,7 +37,7 @@ We've proudly fostered a more open and inclusive digital world through our open-
 Without additional funding, we will need to shut down our public APIs in the coming weeks. Site search is already suspended, but API access remains—for now. This is a consequence of the balancing act between our commitment to the mission and the stark reality of operational costs and personal sustenance needs.
 
 <figure>
-    <img alt="Screenshot of our frontend being shutdown, with a banner instead of search." src="/assets/images/2023-05-23-crossroads/screenshot.png">
+    <img alt="Screenshot of our frontend being shutdown, with a banner instead of search." src="/assets/images/2023-05-23-crossroads/screenshot.jpeg">
     <figcaption>Site search is already suspended, but API access remains—for now.</figcaption>
 </figure>
 
