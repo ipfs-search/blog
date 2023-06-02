@@ -1,5 +1,6 @@
 ---
 layout: single
+author: Frido Emans
 title:  "Bump in the road"
 excerpt: "We are shutting down ipfs-search.com. For good? We hope not. A retrospective and a look forward. "
 header :
