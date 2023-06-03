@@ -6,7 +6,6 @@ excerpt: "We are shutting down ipfs-search.com. For good? We hope not. A retrosp
 header :
   teaser: "/assets/images/2023-06-02-bump-in-the-road/Bumpy_road.jpg"
   overlay_image: "/assets/images/2023-06-02-bump-in-the-road/Bumpy_road.jpg"
-  overlay_filter: rgba(0, 0, 0, 0.7)
 tags :
   - IPFS
   - Filecoin
@@ -28,7 +27,7 @@ We received a [Filecoin Dev Grant](https://github.com/filecoin-project/devgrants
 
 ![Untitled](/assets/images/2023-06-02-bump-in-the-road/2023-06-02-Newest-frontend.png)
 
-There are some problems too; while we had creeped in a lot of awesome technical features, the fact that the search is not biased for or tailored to users actually creates some issues. We had no marketing department to gather more users and unmoderated access to the millions of random files shared on IPFS do not generate viral adoption of the search engine. Without advertisement or user targeting as a business model there was no immediate way to monetize on the frontend as a product at all, let alone enough to work on usability features. We did not want to sell out on our principles and more funding appeared a lot harder to find than expected. The cryptowinter and the global economic turmoil did not help in that regard. In the meantime, the costs in servers and manhours are piling up.
+There are some problems too; while we had creeped in a lot of awesome technical features, the search is not biased and therefore does not really target any user segments. We had no marketing department to gather more users and unmoderated access to the millions of random files shared on IPFS do not generate viral adoption of the search engine. Without advertisement or user targeting as a business model there was no immediate way to monetize on the frontend as a product at all, let alone enough to work on usability features. We did not want to sell out on our principles and more funding appeared a lot harder to find than expected. The cryptowinter and the global economic turmoil did not help in that regard. In the meantime, the costs in servers and manhours are piling up.
 
 ### Hope for the future
 
